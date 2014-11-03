@@ -1,0 +1,1732 @@
+<html>
+
+<head>
+
+     <!-- establece codificacion utf-8 y otras opciones -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- linkea con las hojas de estilo -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- linkea con la hoja de javascript  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- titulo del documento -->
+    <title>Parte 2: Matriz origen-destino</title>
+
+</head>
+
+<!-- cuerpo del documento -->
+
+<body>
+    <!-- barra de navegación principal -->
+    <div class="container">
+        ::before
+        <div class="bs-component">
+            <div class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <!-- Inicio dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inicio<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./index.html#">Inicio</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./index.html#_Toc392849621">Índice</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361295">Índice de figuras</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361296">Índice de tablas</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361297">Prólogo</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361298">Resumen</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Parte 1 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 1<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte1.html#">Parte 1: Modelo de la red de transporte</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte1.html#_Toc400361300">A. Modelar una red de transporte de cargas</a>
+                                </li>
+                                <li><a href="./parte1.html#_Toc400361305">B. Modelo de la red vial argentina</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 2 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 2<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte2.html#">Parte 2: Matriz origen-destino</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte2.html#_Toc400361310">A. Matriz de granos 2010</a>
+                                </li>
+                                <li><a href="./parte2.html#_Toc400361311">B. Matrices OD 2010 en base a datos de producción, consumo y comercio exterior</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 2 (bis) dropdown button -->
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 2 (bis)<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte2_cont.html#">Parte 2 (bis): Matriz origen-destino</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte2_cont.html#_Toc400361321">C. Estudio anterior actualizado a 2010</a>
+                                </li>
+                                <li><a href="./parte2_cont.html#_Toc400361322">D. Flujos de transporte relevados</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 3 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 3<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte3.html#">Parte 3: Los tránsitos en la red vial</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte3.html#_Toc400361324">A. Rutas nacionales</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361325">B. Rutas provinciales</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361326">C. Discrepancias entre flujos viales y flujos asignados, y su tratamiento</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361327">D. Cobertura del modelo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 4 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 4<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte4.html#">Parte 4: Resultados obtenidos</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte4.html#conclusion1">Concentración de orígenes y destinos</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion2">Dominancia del sector primario</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion3">Bajas distancias recorridas</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion4">Alcance del modelo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Bibliografía normal button -->
+                        <li><a href="biblio.html">Bibliografía</a>
+                        </li>
+
+                        <!-- Anexo dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Anexo<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./anexo.html#">Anexo</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./anexo.html#_Toc400361331">A. Zonas de tráfico</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361332">B. Nodos conectivos</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361333">C. Partidos/ Departamentos por zona de tráfico</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361334">D. Extensión de la red vial nacional por provincia</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361335">E. Extensión de la red vial provincial por provincia</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361336">F. Toneladas reales y equivalentes, por producto</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361337">G. Lista de tramos de la red</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="visualizaciones.html">Visualizaciones</a>
+                        </li>
+                        <li><a href="descargas.html">Descargas</a>
+                        </li>
+                        <li><a href="http://www.blogdelcespa.blogspot.com.ar">CESPA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN barra de navegación principal -->
+
+    ::after
+
+    <!-- barra de navegación side -->
+    <ul id="sidebar" class="nav nav-pills nav-stacked">
+        <li class="panel panel-default active"><a href="#">Parte 2 (bis)</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361321">C. Estudio anterior actualizado a 2010</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361322">D. Flujos de transporte relevados</a>
+        </li>
+    </ul>
+    <!-- FIN barra de navegación side -->
+
+    <div id="documento">
+        <h1 id="head_parte2">Parte 2: Matriz origen-destino (continuación)</h1>
+
+        <h3 id="_Toc400361314">3. Vinos</h3>
+
+        <p>En el caso de la matriz OD de vinos los datos de producción provinieron del Instituto Nacional de Vitivinicultura (INV) con desagregación por departamento y por modalidad de envío (botella, tetra-brik y damajuana entre las principales).</p>
+
+        <p>La matriz distribuye 1,3 millones de toneladas, con una distancia media de 1.063 km con un total de transporte producido de 1.407 millones de toneladas-kilómetro.</p>
+
+        <p>En base a consultas a transportistas que trabajan con estos productos, se calcularon coeficientes de equivalencia para las toneladas reales transportadas bajo cada modalidad.</p>
+
+        <p class="table_header">
+            <strong>Tabla 4:&nbsp;</strong>Cantidades de vino transportadas, por modalidad de envío</p>
+        <table id="tabla4_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Modalidad de envío</th>
+                <th>Volumen</th>
+                <th>Factor de conversión a toneladas (1)</th>
+                <th>Toneladas</th>
+                <th>Factor de equivalencia</th>
+                <th>Toneladas equivalentes</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>hectolitros</td>
+                <td>ton / hectolitros</td>
+                <td>unidades</td>
+                <td>ton equiv / ton</td>
+                <td>unidades</td>
+            </tr>
+            <tr>
+                <td>Botella</td>
+                <td>4.941.025</td>
+                <td>0,089</td>
+                <td>439.751</td>
+                <td>2,05</td>
+                <td>901.482</td>
+            </tr>
+            <tr>
+                <td>Tetra-Brik</td>
+                <td>3.786.301</td>
+                <td>0,089</td>
+                <td>336.981</td>
+                <td>1,10</td>
+                <td>370.679</td>
+            </tr>
+            <tr>
+                <td>Damajuana</td>
+                <td>550.750</td>
+                <td>0,089</td>
+                <td>49.017</td>
+                <td>1,00</td>
+                <td>49.017</td>
+            </tr>
+            <tr>
+                <td>Granel</td>
+                <td>17.232</td>
+                <td>0,089</td>
+                <td>1.534</td>
+                <td>1,00</td>
+                <td>1.534</td>
+            </tr>
+            <tr>
+                <strong>
+                    <td>
+                        <strong>TOTAL</strong>
+                    </td>
+                    <td>
+                        <strong>9.295.308</strong>
+                    </td>
+                    <td>
+                        <strong>0,089</strong>
+                    </td>
+                    <td>
+                        <strong>827.282</strong>
+                    </td>
+                    <td>
+                        <strong>1,60</strong>
+                    </td>
+                    <td>
+                        <strong>1.322.712</strong>
+                    </td>
+                </strong>
+            </tr>
+        </table>
+        <p></p>
+
+        <p>Los orígenes se zonificaron de acuerdo a los datos del INV y el consumo interno se distribuyó en forma proporcional a la población. Las exportaciones se distribuyeron en base a los países de destino reportados para 2010 por INDEC
+            <href="#_ftn24" name="_ftnref24" title="">[24]</a>. El 11% que se exporta a Paraguay se destinó a la ZT Formosa mientras que el resto se asignó a la ZT Buenos Aires.</p>
+
+        <p>Sin embargo, la asignación de pares origen-destino no se realizó minimizando las toneladas-kilómetro del sistema, sino que cada origen transporta a todos los destinos en forma proporcional a la población. Al tratarse de un producto altamente diferenciado, no se puede asumir que la distancia sea un factor muy relevante a la hora de determinar dónde se consumen los vinos producidos en cada ZT generadora, más bien debe asumirse que los consumidores demandarán cualquier variedad por igual.</p>
+
+        <p class="figure_header">
+            <strong>Figura 26:&nbsp;</strong>Flujos de transporte de vinos, por origen</p>
+
+        <div class="tableau_viz" id="figura26_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras26a33_ONLINE_3_Redesnuevas/dashVinos?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras26a33_ONLINE_3_Redesnuevas/dashVinos?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+
+
+        <p></p>
+
+        <h3 id="_Toc400361315">4. Lácteos</h3>
+
+        <p>La matriz origen-destino de lácteos se subdivide en una matriz de leches fluidas y otra de productos derivados.</p>
+
+        <p class="table_header">
+            <strong>Tabla 5:&nbsp;</strong>Cantidades de productos lácteos transportados</p>
+        <table id="tabla5_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Producto</th>
+                <th>Litros</th>
+                <th>Conversión a toneladas*</th>
+                <th>Toneladas</th>
+                <th>Factor de equivalencia</th>
+                <th>Toneladas equivalentes</th>
+                <th>Toneladas-kilómetro</th>
+                <th>Distancia media</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>millones</td>
+                <td>ton / mill litros</td>
+                <td>unidades</td>
+                <td>ton equiv / ton</td>
+                <td>unidades</td>
+                <td>millones</td>
+                <td>km</td>
+            </tr>
+            <tr>
+                <td>Leche</td>
+                <td>1.711</td>
+                <td>1.032</td>
+                <td>1.765.752</td>
+                <td>1</td>
+                <td>1.765.745</td>
+                <td>595</td>
+                <td>337</td>
+            </tr>
+            <tr>
+                <td>Derivados</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>1.555.269</td>
+                <td>1</td>
+                <td>1.555.268</td>
+                <td>516</td>
+                <td>332</td>
+            </tr>
+            <tr>
+                <strong>
+                    <td>
+                        <strong>TOTAL</strong>
+                    </td>
+                    <td>
+                        <strong>&nbsp;</strong>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <strong>3.321.021</strong>
+                    </td>
+                    <td>
+                        <strong>1</strong>
+                    </td>
+                    <td>
+                        <strong>3.321.013</strong>
+                    </td>
+                    <td>
+                        <strong>1.112</strong>
+                    </td>
+                    <td>
+                        <strong>335</strong>
+                    </td>
+                </strong>
+            </tr>
+        </table>
+        <p></p>
+
+        <p>Los datos utilizados provienen de la Dirección de Información y Análisis Regional del Ministerio de Economía
+            <href="#_ftn25" name="_ftnref25" title="">[25]</a>. Hay 9,26 millones de litros de leche que se producen con destino a la industria (otros 746 mil litros participan del circuito informal de distribución de leche).</p>
+
+        <p>Para elaboración de leches fluidas se destinan 1,74 millones de litros mientras que el resto se destina a la elaboración de productos derivados (quesos, leche en polvo, yogur, dulce de leche, manteca y otros) que totalizan 1,56 millones de toneladas.</p>
+
+        <p>Los litros producidos de leches fluidas se transforman a toneladas según la densidad del fluido que es un poco más pesado que el agua (1,032 ton/m3) lo que da 1,77 millones de toneladas.</p>
+
+        <p><i>Orígenes</i>
+        </p>
+
+        <p>Los orígenes se distribuyeron primero por provincia, utilizando datos del Censo Económico Nacional de 2004 que muestra que el 98% de la producción se concentra en 4 provincias y la Ciudad de Buenos Aires.</p>
+
+        <p class="table_header">
+            <strong>Tabla 6:&nbsp;</strong>Productos lácteos transportados, por origen provincial</p>
+        <table id="tabla6_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Producto</th>
+                <th>Leches fluidas</th>
+                <th>Derivados lácteos</th>
+                <th>Total</th>
+                <th>% del total</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>toneladas</td>
+                <td>toneladas</td>
+                <td>toneladas</td>
+                <td>%</td>
+            </tr>
+            <tr>
+                <td>Buenos Aires</td>
+                <td>769.305</td>
+                <td>681.373</td>
+                <td>1.450.678</td>
+                <td>44%</td>
+            </tr>
+            <tr>
+                <td>Santa Fe</td>
+                <td>628.456</td>
+                <td>556.620</td>
+                <td>1.185.076</td>
+                <td>36%</td>
+            </tr>
+            <tr>
+                <td>Cordoba</td>
+                <td>236.501</td>
+                <td>209.465</td>
+                <td>445.966</td>
+                <td>13%</td>
+            </tr>
+            <tr>
+                <td>CABA</td>
+                <td>51.186</td>
+                <td>45.335</td>
+                <td>96.521</td>
+                <td>3%</td>
+            </tr>
+            <tr>
+                <td>Entre Rios</td>
+                <td>23.071</td>
+                <td>20.433</td>
+                <td>43.504</td>
+                <td>1%</td>
+            </tr>
+            <tr>
+                <td>Otras</td>
+                <td>57.226</td>
+                <td>42.042</td>
+                <td>99.268</td>
+                <td>3%</td>
+            </tr>
+            <tr>
+                <strong>
+                    <td>
+                        <strong>TOTAL</strong>
+                    </td>
+                    <td>
+                        <strong>1.765.745</strong>
+                    </td>
+                    <td>
+                        <strong>1.555.268</strong>
+                    </td>
+                    <td>
+                        <strong>3.321.013</strong>
+                    </td>
+                    <td>
+                        <strong>100%</strong>
+                    </td>
+                </strong>
+            </tr>
+        </table>
+        <p></p>
+
+        <p>Las provincias de Santa Fe y Córdoba luego se distribuyeron por departamento en base a datos del CEN
+            <href="#_ftn26" name="_ftnref26" title="">[26]</a>provistos por las respectivas direcciones de estadísticas de cada provincia. En el caso de la provincia de Buenos Aires se distribuyó el total producido por la provincia primero por cuenca productora.</p>
+
+        <p class="table_header">
+            <strong>Tabla 7:&nbsp;</strong>Proporción de litros de leche fluida procesados por cuenca en la provincia de Buenos Aires</p>
+        <table id="tabla7_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Cuenca</th>
+                <th>% litros procesados</th>
+            </tr>
+            <tr>
+                <td>Abasto Sur</td>
+                <td>36%</td>
+            </tr>
+            <tr>
+                <td>Abasto Norte</td>
+                <td>16%</td>
+            </tr>
+            <tr>
+                <td>Oeste</td>
+                <td>28%</td>
+            </tr>
+            <tr>
+                <td>Mar y Sierras</td>
+                <td>3%</td>
+            </tr>
+            <tr>
+                <td>Fuera de Cuenca</td>
+                <td>17%</td>
+            </tr>
+            <tr>
+                <td>Sur</td>
+                <td>1%</td>
+            </tr>
+            <tr>
+                <strong>
+                    <td>
+                        <strong>TOTAL</strong>
+                    </td>
+                    <td>
+                        <strong>100%</strong>
+                    </td>
+                </strong>
+            </tr>
+        </table>
+        <p></p>
+
+        <p>Luego se distribuyó el total de cada cuenca entre los departamentos que la componen según la cantidad de tambos presentes en el departamento hasta julio de 2008 según la Dirección de Producción Láctea de la Provincia de Buenos Aires. Una vez obtenidas las estimaciones de producción por departamento se procedió a zonificarlas en términos de las ZTs del modelo según el procedimiento usual.</p>
+
+        <p>En el caso de CABA la ZT que corresponde es “Buenos Aires”. Para el resto de las provincias (3% del total) se distribuyó por población.</p>
+
+        <p><i>Destinos</i>
+        </p>
+
+        <p>El consumo interno se distribuyó por población de la misma manera que se hizo con el consumo interno de otros productos alimenticios, mientras que la exportación de productos derivados de la leche se asignó en base a datos de aduana.</p>
+
+        <p class="figure_header">
+            <strong>Figura 27:&nbsp;</strong>Flujos de transporte de productos lácteos, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura27_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras26a33_ONLINE_3_Redesnuevas/dashLacteos?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras26a33_ONLINE_3_Redesnuevas/dashLacteos?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+
+        <p></p>
+
+        <b><br />
+</b>
+        <h3 id="_Toc400361316">5. Cemento</h3>
+
+        <p>Para confeccionar la matriz OD de cemento contamos con datos de consumo por provincia de la Asociación de Fabricantes de Cemento Portland, pero no de producción efectiva (a nivel de provincia o departamento). En su lugar utilizamos datos sobre la capacidad instalada de los polos cementeros, con importante concentración geográfica en el país, provistos por el sitio web de la International Cement Review
+            <href="#_ftn27" name="_ftnref27" title="">[27]</a>.</p>
+
+        <p>El cemento es mayormente un producto poco transable (si bien existe algo de exportación), con gran incidencia en su precio final del costo de transporte. Esto fundamenta la hipótesis de que los núcleos de consumo deben recurrir a las fuentes de mayor proximidad.</p>
+
+        <p>Los datos de consumo son entonces distribuidos entre los nodos de la red según su proporción de población en el total provincial. La mayor parte del cemento se utiliza para la construcción de obras civiles y edificios que están estrechamente relacionados con la cantidad de población de manera que el procedimiento da lugar a escasas distorsiones para este caso.</p>
+
+        <p>Nuestra hipótesis para asignar la producción de cemento a cada nodo no fue la de asignar en forma completamente proporcional a la capacidad instalada. Olavarría es el mayor nodo productor de cemento (posee la mitad de la capacidad instalada total) y por lo tanto el que cubre los faltantes de la producción en los radios de cobertura de las otras cementeras más pequeñas. Sin embargo no deberíamos observar demasiado transporte de cemento de Olavarría a localidades muy distantes siendo que existen cementeras mucho más cercanas.</p>
+
+        <p>Esto nos llevó a utilizar distintos factores de utilización de la capacidad instalada para cada cementera como forma de corregir en parte el excesivo transporte de cemento observado desde Olavarría hacia localidades lejanas.</p>
+
+        <p class="figure_header">
+            <strong>Figura 28:&nbsp;</strong>Flujos de transporte de cemento, por origen</p>
+
+        <div class="tableau_viz" id="figura28_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras26a33_ONLINE_3_Redesnuevas/dashCemento?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras26a33_ONLINE_3_Redesnuevas/dashCemento?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+
+        <p></p>
+
+        <p>El uso medio de la capacidad instalada (que es de 20.4 millones de toneladas) dado que el consumo de cemento es de 10.2 millones de toneladas, es de aproximadamente el 50%. En la matriz no se tuvo en cuenta a las provincias de Tierra del Fuego, Santa Cruz y Chubut debido a que no incluimos en la red a las zonas más lejanas del sur ya que tienen un tráfico de escaso interés para el estudio. Esto hace que el uso medio de la capacidad instalada en nuestra matriz sea del 48%.</p>
+
+        <p>Los porcentajes de uso de la capacidad instalada que utilizamos para cada nodo productor fueron los siguientes:</p>
+
+        <ul>
+            <li>Olavarría: 40,5%</li>
+            <li>Frías: 61,0%</li>
+            <li>San Luis: 79,0%</li>
+            <li>San Juan: 80,0%</li>
+            <li>Resto: 53,2%</li>
+        </ul>
+
+        <p>Esto generó una distribución en la que cada cementera tiene un cierto radio de cobertura mientras que el nodo de Olavarría cubre el faltante en las localidades que no pueden completar su abastecimiento mediante la cementera local.</p>
+
+        <p>Existen casi 270 mil toneladas de exportación de cemento y unas 28 mil de importación (para el año 2010) que no están contabilizadas en esta matriz debido a la ausencia de datos para localizar geográficamente los flujos. Esto implica que la matriz subestima los flujos de transporte de cemento en alrededor de un 3%.</p>
+
+        <h3 id="_Toc400361317">6. Acero</h3>
+
+        <p>Los orígenes de la matriz OD de acero se basan en datos de la Cámara Argentina del Acero. Los destinos fueron construidos a partir de datos del Censo Económico Nacional (CEN) de 2004 y de la Matriz Insumo Producto (MIP) de 1997.</p>
+
+        <p>A partir de la MIP se establecieron las proporciones en que la industria del acero vende su producto a otros sectores. Luego con datos del CEN se hizo la distribución a nivel provincial de estas ventas de acero según la importancia que cada sector comprador de acero tiene en cada provincia.</p>
+
+        <p>Los productos de orden 102 (Hierro y acero comunes) y 103 (Productos laminados, estirados o doblados de hierro o acero) de la MIP son los elegidos como “industria del acero” mientras que los siguientes productos del CEN fueron los compradores de acero:</p>
+
+        <ul>
+            <li>289 "Fabricación de productos elaborados de metal n.c.p.; servicios de trabajo de metales</li>
+            <li>271 "Industrias básicas de hierro y acero"</li>
+            <li>281 "Fabricación de productos metálicos para uso estructural, tanques, depósitos y generadores de vapor"</li>
+            <li>291 "Fabricación de maquinaria de uso general"</li>
+            <li>292 "Fabricación de maquinaria de uso especial" incl. agrícola, tractores y demás.</li>
+            <li>342 "Fabricación de carrocerías para vehículos automotores; Fabricación de remolques y semirremolques"</li>
+            <li>361 "Fabricación de muebles y colchones"</li>
+        </ul>
+
+        <p>Además, un 29% de la producción de acero según la MIP se destina al sector de la construcción. En este caso se asignó esa producción al resto del país en forma proporcional a la población (siguiendo el criterio de distribución del cemento, cuyo destino principal es también la construcción).</p>
+
+        <p>De esta manera se cubren las ventas de acero a otros sectores, pero existe un flujo importante de ventas que es intrasectorial. Este fue tratado en forma separada y se basa en datos de origen y destino del estudio anterior (Müller 1994) actualizado por cantidades a 2010.</p>
+
+        <p class="figure_header">
+            <strong>Figura 29:&nbsp;</strong>Flujos de transporte de productos de acero para terceros y para el propio sector, por orígenes</p>
+
+        <div class="tableau_viz" id="figura29_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras26a33_ONLINE_3_Redesnuevas/dashAcero?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras26a33_ONLINE_3_Redesnuevas/dashAcero?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+
+        <p><b> </b>
+        </p>
+
+        <h3 id="_Toc400361318">7. Automotores</h3>
+
+        <p>La matriz OD de automotores es de construcción más compleja que los productos a granel vistos hasta el momento. Este rubro aporta unas 4,3 millones de toneladas equivalentes a la red y 1.729 millones de toneladas kilómetro. La distancia media para esta matriz OD es de 401,3 km.</p>
+
+        <p>Se identificaron 10 firmas fabricantes y distribuidoras de automotores mientras que fueron agrupados en “TOTAL Distribuidores y Particulares” aquellos agentes que no intervienen en la fabricación sino solamente en la comercialización de automotores. Entre ellos están por ejemplo aquellos individuos que importan en forma directa.</p>
+
+        <p class="table_header">
+            <strong>Tabla 8:&nbsp;</strong>Firmas productoras de automotores</p>
+        <table id="tabla8_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Firma</th>
+                <th>Código nodo</th>
+                <th>Zona de tráfico</th>
+            </tr>
+            <tr>
+                <td>FORD ARGENTINA SCA</td>
+                <td>1</td>
+                <td>BUENOS AIRES</td>
+            </tr>
+            <tr>
+                <td>MERCEDES-BENZ ARGENTINA S.A.</td>
+                <td>1</td>
+                <td>BUENOS AIRES</td>
+            </tr>
+            <tr>
+                <td>PSA PEUGEOT-CITROEN S.A.</td>
+                <td>1</td>
+                <td>BUENOS AIRES</td>
+            </tr>
+            <tr>
+                <td>TOTAL Distribuidores y Particulares</td>
+                <td>1</td>
+                <td>BUENOS AIRES</td>
+            </tr>
+            <tr>
+                <td>VOLKSWAGEN ARGENTINA S.A.</td>
+                <td>1</td>
+                <td>BUENOS AIRES</td>
+            </tr>
+            <tr>
+                <td>TOYOTA ARGENTINA S.A.</td>
+                <td>3</td>
+                <td>ZARATE</td>
+            </tr>
+            <tr>
+                <td>GENERAL MOTORS ARGENTINA SRL</td>
+                <td>21</td>
+                <td>ROSARIO</td>
+            </tr>
+            <tr>
+                <td>FIAT AUTO ARGENTINA S.A.</td>
+                <td>56</td>
+                <td>CORDOBA</td>
+            </tr>
+            <tr>
+                <td>IVECO ARGENTINA S.A.</td>
+                <td>56</td>
+                <td>CORDOBA</td>
+            </tr>
+            <tr>
+                <td>RENAULT ARGENTINA S.A.</td>
+                <td>56</td>
+                <td>CORDOBA</td>
+            </tr>
+            <tr>
+                <td>SCANIA ARGENTINA S.A.</td>
+                <td>83</td>
+                <td>TUCUMAN</td>
+            </tr>
+        </table>
+        <p></p>
+
+        <p>Sobre la base de datos de ADEFA, se puede calcular la composición de la producción de cada firma según tipo de automotor (liviano, utilitario, pesado, etc) calculando a partir de allí un factor de equivalencia por firma. Las unidades producidas por cada firma se convierten a toneladas equivalentes mediante este coeficiente.</p>
+
+        <p class="table_header">
+            <strong>Tabla 9:&nbsp;</strong>Factores de equivalencia, por firma</p>
+        <table id="tabla9_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Firma</th>
+                <th>Factor de equivalencia</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>ton equiv / unidades</td>
+            </tr>
+            <tr>
+                <td>FIAT AUTO ARGENTINA S.A.</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>FORD ARGENTINA SCA</td>
+                <td>3,6</td>
+            </tr>
+            <tr>
+                <td>GENERAL MOTORS ARGENTINA SRL</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>IVECO ARGENTINA S.A.</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>MERCEDES-BENZ ARGENTINA S.A.</td>
+                <td>5,7</td>
+            </tr>
+            <tr>
+                <td>PSA PEUGEOT-CITROEN S.A.</td>
+                <td>3,1</td>
+            </tr>
+            <tr>
+                <td>RENAULT ARGENTINA S.A.</td>
+                <td>3,2</td>
+            </tr>
+            <tr>
+                <td>TOYOTA ARGENTINA S.A.</td>
+                <td>4,3</td>
+            </tr>
+            <tr>
+                <td>VOLKSWAGEN ARGENTINA S.A.</td>
+                <td>3,7</td>
+            </tr>
+        </table>
+        <p></p>
+
+        <p>La importación proviene de datos de aduana; sin embargo, no se dispone de desagregación por firma, sino sólo del total por posición arancelaria. Se convierte el total en toneladas equivalentes según los coeficientes para cada clasificación de automotor.</p>
+
+        <p>Se asignó un 95% al nodo de Zárate (3) y un 5% al nodo de Paso de los Libres (71) siguiendo la misma distribución que se observa para la exportación de automotores bajo la idea de que el comercio exterior de este rubro se lleva adelante en terminales más especializadas que la carga común y por lo tanto al existir una fuerte concentración de la exportación en Zárate es esperable que estas terminales también sean las elegidas para operar con automotores en el comercio de importación.</p>
+
+        <p><i>Destinos</i>
+        </p>
+
+        <p>Los destinos se componen de la exportación y el consumo interno. Según datos de aduana similares a los utilizados para la importación, calculamos el total exportado de automotores en toneladas equivalentes. La distribución se hizo, como ya se dijo, en base a la misma fuente donde se observó que aproximadamente el 95% se despacha por el nodo de Zárate y el 5% por el nodo de Paso de los Libres.</p>
+
+        <p>No disponemos de las cantidades exportadas por firma, pero contamos con el dato del monto en dólares exportado por cada firma en el rubro. Utilizando la composición porcentual que surge de estos datos, asignamos los flujos de exportación a sus orígenes.</p>
+
+        <p>La distribución de los destinos del consumo interno fue la más compleja porque no se disponía de datos más que del monto global de ventas, y el criterio de distribución proporcional a la población no es adecuado en este caso ya que no se puede sostener que el consumo de automotores es similar en todas provincias. En principio es común asociar el consumo en este rubro con el poder adquisitivo, de manera que una posibilidad era asignar las ventas internas según el PBG per cápita de cada provincia y luego sí distribuir hacia el interior de cada una en forma proporcional a la población.</p>
+
+        <p>Para chequear esta posibilidad calculamos la elasticidad del parque automotor per cápita (datos de ADEFA para cada provincia) respecto del PBG per cápita del año 2008 (última estimación confiable de la que disponemos para todas las provincias) con una especificación econométrica logarítmica (log-log).</p>
+
+        <p class="table_header">
+            <strong>Tabla 10:&nbsp;</strong>Elasticidad del parque automotor per cápita al PBI per cápita</p>
+
+        <table class="table table-striped table-hover ">
+            <tbody>
+
+                <tr>
+                    <th>
+                        VARIABLES
+                    </th>
+                    <th>
+                        (1) lparque2010pc
+                    </th>
+                    <th>
+                        (2) lparque2010pc
+                    </th>
+                    <th>
+                        (3) lparque2010pc
+                    </th>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        lpbi2008pc
+                    </td>
+                    <td>
+                        0.661***
+                    </td>
+                    <td>
+                        0.712***
+                    </td>
+                    <td>
+                        0.903***
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        (0.0840)
+                    </td>
+                    <td>
+                        (0.0807)
+                    </td>
+                    <td>
+                        (0.0927)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Constant
+                    </td>
+                    <td>
+                        -1.260
+                    </td>
+                    <td>
+                        -1.738**
+                    </td>
+                    <td>
+                        -3.573***
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        (0.827)
+                    </td>
+                    <td>
+                        (0.805)
+                    </td>
+                    <td>
+                        (0.913)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Observations
+                    </td>
+                    <td>
+                        23
+                    </td>
+                    <td>
+                        22
+                    </td>
+                    <td>
+                        19
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        R-squared
+                    </td>
+                    <td>
+                        0.717
+                    </td>
+                    <td>
+                        0.819
+                    </td>
+                    <td>
+                        0.839
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Robust standard errors in parentheses
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        *** p&lt;0.01, ** p&lt;0.05, * p&lt;0.1
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <p>En la muestra completa para las 23 provincias (1) la eficiencia de la regresión fue de poco más del 70% y la elasticidad 0.661. Sin embargo existen provincias de muy alto producto per cápita relacionado con actividades extractivas que distorsionan el análisis al generar ingresos que no participandel circuito de consumo del cual depende la capacidad de adquirir unidades automotores de una población.</p>
+
+        <p>En (2) excluimos primero la provincia minera de Catamarca obteniendo 10 puntos más de eficiencia en la regresión y una elasticidad mayor (0.712). En (3) excluimos las provincias de Catamarca, Santa Cruz, Tierra del Fuego y Neuquén consiguiendo una eficiencia algo mayor y la elasticidad resultante fue de 0.903.</p>
+
+        <p class="figure_header">
+            <strong>Figura 30:
+            </strong>Relación entre parque automotor provincial per cápita y PBI per cápita</p>
+        <img src="./images/figura_18.png" alt="">
+
+        <p></p>
+
+        <p>Esta última elasticidad fue la que utilizamos para estimar la cantidad de unidades compradas por habitante en cada provincia para determinada cantidad de unidades totales vendidas en el país y utilizando la población del censo 2010.</p>
+
+        <p><i>Ajustes</i>
+        </p>
+
+        <p>Tanto los orígenes como los destinos fueron estimados con datos independientes entre sí, de manera que fue necesario realizar un ajuste para compatibilizar el monto total de toneladas equivalentes originadas con el monto total de toneladas equivalentes en los destinos. Además de la independencia de las fuentes de datos, debemos tener en cuenta las posibles distorsiones producidas por la conversión en todos los casos a toneladas equivalentes. Este cálculo dista de ser preciso y debe tomarse como una aproximación con el propósito de convertir la heterogeneidad de productos que se transportan en la Argentina en una misma unidad de medida. Aún incluso dentro del sector automotor, las unidades que se producen tienen características muy distintas entre sí y la conversión a toneladas equivalentes puede introducir algunas distorsiones.</p>
+
+        <p>Por el lado de los orígenes, la conversión de toneladas a toneladas equivalentes arrojó un volumen de alrededor de 4 millones de toneladas.</p>
+
+        <br />
+        <p class="table_header">
+            <strong>Tabla 11:&nbsp;</strong>Producción e importación de automotores, por origen</p>
+        <table id="tabla11_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Código nodo</th>
+                <th>Zona de tráfico</th>
+                <th>Producción local</th>
+                <th>Importación</th>
+                <th>Total Origen</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>ton equiv</td>
+                <td>ton equiv</td>
+                <td>ton equiv</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ZARATE</td>
+                <td>330.402</td>
+                <td>1.491.603</td>
+                <td>1.822.005</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>BUENOS AIRES</td>
+                <td>1.269.514</td>
+                <td>&nbsp;</td>
+                <td>1.269.514</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>CORDOBA</td>
+                <td>716.145</td>
+                <td>&nbsp;</td>
+                <td>716.145</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>ROSARIO</td>
+                <td>423.477</td>
+                <td>&nbsp;</td>
+                <td>423.477</td>
+            </tr>
+            <tr>
+                <td>71</td>
+                <td>PASO DE LOS LIBRES</td>
+                <td>&nbsp;</td>
+                <td>78.505</td>
+                <td>78.505</td>
+            </tr>
+            <tr>
+                <strong>
+                    <td>
+                        <strong>TOTAL</strong>
+                    </td>
+                    <td>
+                        <strong>&nbsp;</strong>
+                    </td>
+                    <td>
+                        <strong>2.739.538</strong>
+                    </td>
+                    <td>
+                        <strong>1.570.108</strong>
+                    </td>
+                    <td>
+                        <strong>4.309.646</strong>
+                    </td>
+                </strong>
+            </tr>
+        </table>
+        <p></p>
+
+        <p>Por el lado de los destinos el total resultó sumar unos 4,5 millones de toneladas equivalentes. Es decir un excedente de alrededor del 12%. Esta diferencia obligó a hacer un ajuste tanto en orígenes como en destinos de alrededor del 6% en cada caso para compatibilizar los resultados dado que no tenemos razones para creer que uno de los dos haya sido sobreestimado o subestimado y por lo tanto asignar el ajuste sólo de un lado.</p>
+
+        <p class="figure_header">
+            <strong>Figura 31:&nbsp;</strong>Flujos de transporte de cargas de automotores</p>
+
+        <div class="tableau_viz" id="figura31_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras26a33_ONLINE_3_Redesnuevas/dashAutomotor?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras26a33_ONLINE_3_Redesnuevas/dashAutomotor?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+
+
+        <p></p>
+
+        <h3 id="_Toc400361319">8. Combustibles</h3>
+
+        <p>La matriz OD de combustibles reúne más de 20 millones de toneladas equivalentes e incluye gasoil, nafta, fuel oil y aerokerosene.</p>
+
+        <p class="table_header">
+            <strong>Tabla 12:&nbsp;</strong>Cantidades de combustibles transportados, por tipo de combustible</p>
+        <table id="tabla12_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Combustible</th>
+                <th>Producción</th>
+                <th>Importación</th>
+                <th>Total</th>
+                <th>Toneladas-kilómetro</th>
+                <th>Distancia media</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>ton equiv</td>
+                <td>ton equiv</td>
+                <td>ton equiv</td>
+                <td>millones</td>
+                <td>km</td>
+            </tr>
+            <tr>
+                <td>Gasoil</td>
+                <td>10.097.528</td>
+                <td>2.444.807</td>
+                <td>12.542.335</td>
+                <td>5.692</td>
+                <td>454</td>
+            </tr>
+            <tr>
+                <td>Nafta</td>
+                <td>4.182.151</td>
+                <td>95.366</td>
+                <td>4.277.517</td>
+                <td>2.051</td>
+                <td>480</td>
+            </tr>
+            <tr>
+                <td>Fuel Oil</td>
+                <td>2.803.692</td>
+                <td>27.390</td>
+                <td>2.831.082</td>
+                <td>670</td>
+                <td>237</td>
+            </tr>
+            <tr>
+                <td>Aerokerosene</td>
+                <td>1.146.265</td>
+                <td>&nbsp;</td>
+                <td>1.146.265</td>
+                <td>344</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <strong>
+                    <td>
+                        <strong>TOTAL</strong>
+                    </td>
+                    <td>
+                        <strong>18.229.636</strong>
+                    </td>
+                    <td>
+                        <strong>2.567.563</strong>
+                    </td>
+                    <td>
+                        <strong>20.797.199</strong>
+                    </td>
+                    <td>
+                        <strong>8.757</strong>
+                    </td>
+                    <td>
+                        <strong>421</strong>
+                    </td>
+                </strong>
+            </tr>
+        </table>
+
+        <p></p>
+
+        <p><i>Orígenes</i>
+        </p>
+
+        <p>Los orígenes de la matriz de combustibles son poco más de 17 refinerías más los nodos de importación. La localización de las refinerías fue provista por la Secretaría de Energía (SE) para poder luego ser zonificadas. Los datos de producción provienen de las tablas SESCO de la SE.</p>
+
+        <p class="table_header">
+            <strong>Tabla 13:&nbsp;</strong>Orígenes de la producción de combustibles, por refinería</p>
+        <table id="tabla13_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Refinería o importación</th>
+                <th>Zona de tráfico</th>
+                <th>Producción o importación</th>
+                <th>% del total</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>ton equiv</td>
+                <td>%</td>
+            </tr>
+            <tr>
+                <td>La Plata</td>
+                <td>CHASCOMUS</td>
+                <td>5.963.808</td>
+                <td>29%</td>
+            </tr>
+            <tr>
+                <td>Luján de Cuyo</td>
+                <td>MENDOZA</td>
+                <td>3.712.227</td>
+                <td>18%</td>
+            </tr>
+            <tr>
+                <td>Dock Sud</td>
+                <td>BUENOS AIRES</td>
+                <td>3.019.159</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>Campana</td>
+                <td>ZARATE</td>
+                <td>2.674.107</td>
+                <td>13%</td>
+            </tr>
+            <tr>
+                <td>IMPORTACIÓN</td>
+                <td>&nbsp;</td>
+                <td>2.562.889</td>
+                <td>12%</td>
+            </tr>
+            <tr>
+                <td>San Lorenzo</td>
+                <td>ROSARIO</td>
+                <td>1.000.692</td>
+                <td>5%</td>
+            </tr>
+            <tr>
+                <td>Elicâbe</td>
+                <td>BAHIA BLANCA</td>
+                <td>930.676</td>
+                <td>4%</td>
+            </tr>
+            <tr>
+                <td>Plaza Huincul</td>
+                <td>ZAPALA</td>
+                <td>492.912</td>
+                <td>2%</td>
+            </tr>
+            <tr>
+                <td>Campo Duran</td>
+                <td>TARTAGAL</td>
+                <td>365.154</td>
+                <td>2%</td>
+            </tr>
+            <tr>
+                <td>Campana-ENARSA</td>
+                <td>ZARATE</td>
+                <td>24.618</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>Plaza Huincul-NAO</td>
+                <td>ZAPALA</td>
+                <td>15.567</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>Luján de Cuyo (Polipet.)</td>
+                <td>MENDOZA</td>
+                <td>13.512</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>Pet.Argentina-Neuquen</td>
+                <td>ZAPALA</td>
+                <td>8.632</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>Dock Sud-DAPSA</td>
+                <td>BUENOS AIRES</td>
+                <td>5.216</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>FOX-NEUQUEN</td>
+                <td>BAHIA BLANCA</td>
+                <td>5.110</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>Gral.Rodriguez - GRASTA</td>
+                <td>ZARATE</td>
+                <td>1.352</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>NEUQUEN - Ref.Neuquina</td>
+                <td>ZAPALA</td>
+                <td>881</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>Otras</td>
+                <td>&nbsp;</td>
+                <td>689</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <strong>
+                    <td>
+                        <strong>TOTAL</strong>
+                    </td>
+                    <td>
+                        <strong>&nbsp;</strong>
+                    </td>
+                    <td>
+                        <strong>20.797.199</strong>
+                    </td>
+                    <td>
+                        <strong>100%</strong>
+                    </td>
+                </strong>
+            </tr>
+        </table>
+        <p></p>
+
+        <p>Debe aclararse que, en rigor, la distribución de combustibles se hace desde otros puntos de almacenamiento conectados a las refinerías por cañerías. En su mayoría, sin embargo, estos pertenecen a las mismas zonas de tráfico que sus respectivas refinerías (no están muy lejos de ellas), de manera que la distinción se hace innecesaria.</p>
+
+        <p>La importación presentó algunas complicaciones adicionales. Los datos de la SE no incluían las importaciones de gasoil realizadas por CAMMESA (sólo incluían las del resto de los operadores) y por lo tanto hubo que suplir el dato con un ajuste. Al comparar orígenes con destinos se asignó la fuerte discrepancia observada entre las ventas al mercado interno de gasoil y la oferta total del mismo (producción más importación) al dato de importación faltante
+            <href="#_ftn28" name="_ftnref28" title="">[28]</a>.</p>
+
+        <p>La importación aparente que surge de comparar orígenes con destinos es de 2.444.807 toneladas. La información de la SE muestra que se importan unas 1.219.594 toneladas de gasoil de manera que 1.225.214 es lo que asumimos como dato faltante de la importación de CAMMESA.</p>
+
+        <p><i>Destinos</i>
+        </p>
+
+        <p>Se consideraron 4 tipos de destinos para la producción (e importación según el caso) de combustibles: estaciones de servicios, centrales térmicas, aeropuertos y exportaciones.</p>
+
+        <p class="table_header">
+            <strong>Tabla 14:&nbsp;</strong>Destinos de la producción e importación de combustibles, por tipo de destino</p>
+        <table id="tabla14_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Combustible</th>
+                <th>Estaciones de servicio</th>
+                <th>Centrales térmicas</th>
+                <th>Aeropuertos</th>
+                <th>Exportación</th>
+                <th>TOTAL sin ajuste</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>toneladas</td>
+                <td>toneladas</td>
+                <td>toneladas</td>
+                <td>toneladas</td>
+                <td>toneladas</td>
+            </tr>
+            <tr>
+                <td>Gasoil</td>
+                <td>11.801.337</td>
+                <td>1.384.204</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>13.185.541</td>
+            </tr>
+            <tr>
+                <td>Nafta</td>
+                <td>4.587.335</td>
+                <td>-</td>
+                <td>&nbsp;</td>
+                <td>10.180</td>
+                <td>4.597.514</td>
+            </tr>
+            <tr>
+                <td>Fuel oil</td>
+                <td>-</td>
+                <td>2.258.560</td>
+                <td>&nbsp;</td>
+                <td>594.175</td>
+                <td>2.852.735</td>
+            </tr>
+            <tr>
+                <td>Aerokerosene</td>
+                <td>-</td>
+                <td>&nbsp;</td>
+                <td>1.146.265</td>
+                <td>&nbsp;</td>
+                <td>1.146.265</td>
+            </tr>
+            <tr>
+                <strong>
+                    <td>
+                        <strong>TOTAL</strong>
+                    </td>
+                    <td>
+                        <strong>16.388.671</strong>
+                    </td>
+                    <td>
+                        <strong>3.642.764</strong>
+                    </td>
+                    <td>
+                        <strong>1.146.265</strong>
+                    </td>
+                    <td>
+                        <strong>604.355</strong>
+                    </td>
+                    <td>
+                        <strong>21.782.055</strong>
+                    </td>
+                </strong>
+            </tr>
+        </table>
+
+        <p></p>
+
+        <p>Las estaciones de servicios provienen de una base de datos de la Secretaría de Energía que compila los volúmenes y precios de combustibles vendidos para cada año en cada una de las estaciones del país (casi 1200). La base tiene problemas conocidos de recopilación (especialmente respecto de los volúmenes, que es la variable relevante para el estudio); se detectaron unos 7 valores extremos de volúmenes de venta para un determinado producto y estación de servicio que fueron reemplazados por el promedio de ventas de las otras estaciones de servicio de la localidad. Las dos localidades donde se encontraron estos problemas fueron Las Varillas (Córdoba) y San Luis (San Luis).</p>
+
+        <p>Aun así, el valor final de m3 vendidos de combustibles resultó ser demasiado alto (controlado por datos de INDEC
+            <href="#_ftn29" name="_ftnref29" title="">[29]</a>) y fue necesario un ajuste a toda la base de estaciones de servicio, para hacer coincidir el consumo de combustibles con la oferta disponible (producción más importación). En el caso del fuel oil también se realizó un ajuste menor para que coincidieran orígenes y destinos. A continuación se detallan los coeficientes de ajuste utilizados
+                <href="#_ftn30" name="_ftnref30" title="">[30]</a>:</p>
+
+        <p class="table_header">
+            <strong>Tabla 15:&nbsp;</strong>Ajuste del cálculo de consumo de combustible por discrepancias en orígenes y destinos, por tipo de combustible</p>
+        <table id="tabla15_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Combustible</th>
+                <th>TOTAL sin ajuste</th>
+                <th>Factor de ajuste</th>
+                <th>TOTAL con ajuste</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>toneladas</td>
+                <td>coeficiente</td>
+                <td>toneladas</td>
+            </tr>
+            <tr>
+                <td>Gasoil</td>
+                <td>13.185.541</td>
+                <td>0,95</td>
+                <td>12.542.335</td>
+            </tr>
+            <tr>
+                <td>Nafta</td>
+                <td>4.597.514</td>
+                <td>0,93</td>
+                <td>4.277.517</td>
+            </tr>
+            <tr>
+                <td>Fuel oil</td>
+                <td>2.852.735</td>
+                <td>0,99</td>
+                <td>2.831.082</td>
+            </tr>
+            <tr>
+                <td>Aerokerosene</td>
+                <td>1.146.265</td>
+                <td>1,00</td>
+                <td>1.146.265</td>
+            </tr>
+            <tr>
+                <strong>
+                    <td>
+                        <strong>TOTAL</strong>
+                    </td>
+                    <td>
+                        <strong>21.782.055</strong>
+                    </td>
+                    <td>
+                        <strong>0,95</strong>
+                    </td>
+                    <td>
+                        <strong>20.797.199</strong>
+                    </td>
+                </strong>
+            </tr>
+        </table>
+        <p></p>
+
+        <p>El consumo de combustibles hecho por centrales térmicas proviene de los informes mensuales de CAMMESA sobre el sector. La localización de las centrales en el informe se realizó en base a un documento enviado por la SE con todas las centrales geo-referenciadas.</p>
+
+        <p>Por último la exportación es el destino menos relevante. Por la zona de Buenos Aires se exportan algunas naftas y fuel oil mientras que por la zona de Bahía Blanca sólo se exporta fuel oil. A falta de otros datos para distribuir las exportaciones de fuel oil entre Buenos Aires y Bahía Blanca, se asignaron proporcionalmente a la producción que registra cada zona del combustible en cuestión.</p>
+
+        <p class="figure_header">
+            <strong>Figura 32:
+            </strong>Flujos de transporte de combustibles, por origen</p>
+
+        <div class="tableau_viz" id="figura32_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figura32_ONLINE_4_Redescombustibles/dashCombustibles?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figura32_ONLINE_4_Redescombustibles/dashCombustibles?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+
+        <p></p>
+
+        <p>Los colores clasifican los flujos de transporte por el origen de la carga.</p>
+
+        <h3 id="_Toc400361320">9. Química y petroquímica</h3>
+
+        <p>Los productos de los cuales se pudo recabar información para este sector no son muy representativos. La cadena de valor de los productos químicos y petroquímicos es muy compleja y tanto sus orígenes como sus destinos son muy específicos en los casos en que hay transportes de importancia.</p>
+
+        <p>La mayor parte de los productos relevantes pudo ser localizada y dimensionada “en origen” pero la dificultad apareció al intentar dilucidar hacia donde se transportan aquellos productos que no se reutilizan en la misma planta.
+            <href="#_ftn31" name="_ftnref31" title="">[31]</a>
+        </p>
+
+        <p>De los 5 productos que se pudieron incorporar al modelo, los dos más importantes se utilizan para fertilización agrícola (urea y tiosulfato de amonio). Los destinos de estos productos se distribuyeron en forma proporcional a la producción de granos de cada Zona de Tráfico en el modelo.</p>
+
+        <p>En el caso del metanol, el PET y el polipropileno la información de los pares origen-destino provino directamente de entrevistas con referentes del sector.</p>
+
+        <p class="table_header">
+            <strong>Tabla 16:&nbsp;</strong>Productos de química y petroquímica transportados</p>
+        <table id="tabla16_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Producto</th>
+                <th>Toneladas</th>
+                <th>Toneladas-kilómetro</th>
+                <th>Distancia media</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>unidades</td>
+                <td>milllones</td>
+                <td>km</td>
+            </tr>
+            <tr>
+                <td>Urea</td>
+                <td>1.414.150</td>
+                <td>766,0</td>
+                <td>541,7</td>
+            </tr>
+            <tr>
+                <td>Metanol</td>
+                <td>320.072</td>
+                <td>376,5</td>
+                <td>1.176,4</td>
+            </tr>
+            <tr>
+                <td>PET</td>
+                <td>237.000</td>
+                <td>37,7</td>
+                <td>159,1</td>
+            </tr>
+            <tr>
+                <td>Tiosulfato</td>
+                <td>115.897</td>
+                <td>55,1</td>
+                <td>475,1</td>
+            </tr>
+            <tr>
+                <td>Polipropileno</td>
+                <td>108.000</td>
+                <td>116,7</td>
+                <td>1.080,1</td>
+            </tr>
+            <tr>
+                <strong>
+                    <td>
+                        <strong>TOTAL</strong>
+                    </td>
+                    <td>
+                        <strong>2.195.119</strong>
+                    </td>
+                    <td>
+                        <strong>1.351,9</strong>
+                    </td>
+                    <td>
+                        <strong>615,9</strong>
+                    </td>
+                </strong>
+            </tr>
+        </table>
+        <p></p>
+
+        <p>La producción de urea se reparte entre la zona de Bahía Blanca (665 mil toneladas) y la de Zárate (128 mil). La importación de este producto en el modelo se asignó por completo a la ZT Buenos Aires (612 mil). En el caso del tiosulfato de amonio hay sólo una ZT que concentra su producción y es Zárate.</p>
+
+        <p class="figure_header">
+            <strong>Figura 33:&nbsp;</strong>Flujos de transporte de fertilizantes, por origen</p>
+
+        <div class="tableau_viz" id="figura33_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras26a33_ONLINE_3_Redesnuevas/dashQumica?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras26a33_ONLINE_3_Redesnuevas/dashQumica?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+
+        <p></p>
+
+        <p>Por su parte el metanol tiene un solo par origen-destino (Neuquén-Rosario), el polipropileno va de la ZT Mendoza a la ZT Buenos Aires y el PET tiene dos pares (Zárate-Buenos Aires y Buenos Aires-Sur).</p>
+
+        <br />
+        <h2 id="_Toc400361321">C. Estudio anterior actualizado a 2010</h2>
+
+        <p>Como dijimos, este estudio se basa a su vez en la encuesta de cargas de 1982 que fue realizada por la Secretaría de Transporte (Müller 1994). Esta encuesta fue posteriormente actualizada a 1986, a 1994 (para el estudio de referencia) y finalmente a 2010, en todos los casos en base a información secundaria.</p>
+
+        <p>Hay 22 productos cuyas matrices origen-destino se toman de este estudio.</p>
+
+        <p class="table_header">
+            <strong>Tabla 17:&nbsp;</strong>Productos provenientes del estudio anterior actualizado a 2010</p>
+        <table id="tabla17_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Producto</th>
+                <th>Toneladas</th>
+                <th>Toneladas-kilómetro</th>
+                <th>Distancia media</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Unidades</td>
+                <td>Millones</td>
+                <td>Km</td>
+            </tr>
+            <tr>
+                <td>PIEDRA Y CANTO RODADO</td>
+                <td>1.537.289</td>
+                <td>653,5</td>
+                <td>425,1</td>
+            </tr>
+            <tr>
+                <td>DURAZNO, CIRUELA, DAMASCO Y UVA PARA MESA</td>
+                <td>726.777</td>
+                <td>662,5</td>
+                <td>911,6</td>
+            </tr>
+            <tr>
+                <td>CAL</td>
+                <td>472.429</td>
+                <td>343,7</td>
+                <td>727,5</td>
+            </tr>
+            <tr>
+                <td>OTRAS HORTALIZAS Y VERDURAS</td>
+                <td>442.310</td>
+                <td>584,8</td>
+                <td>1.322,2</td>
+            </tr>
+            <tr>
+                <td>PREMOLDEADO PARA LA CONSTRUCCION, ARTICULOS DE FIBROCEMENTO Y HORMIGON COMPRIMIDO , CAÑOS, VIGAS PREMOLDEADAS</td>
+                <td>192.426</td>
+                <td>60,6</td>
+                <td>314,8</td>
+            </tr>
+            <tr>
+                <td>PLASTICOS INDUSTRIALES Y TERMOREDUCTIBLES</td>
+                <td>158.017</td>
+                <td>110,9</td>
+                <td>701,7</td>
+            </tr>
+            <tr>
+                <td>SAL</td>
+                <td>120.697</td>
+                <td>53,1</td>
+                <td>439,6</td>
+            </tr>
+            <tr>
+                <td>REPUESTOS DE MAQUINARIAS Y EQUIPOS</td>
+                <td>110.855</td>
+                <td>30,1</td>
+                <td>271,8</td>
+            </tr>
+            <tr>
+                <td>TOMATE, AJI Y PIMIENTOS</td>
+                <td>110.578</td>
+                <td>170,0</td>
+                <td>1.537,1</td>
+            </tr>
+            <tr>
+                <td>SANDIA, ZAPALLO Y MELON</td>
+                <td>110.374</td>
+                <td>46,8</td>
+                <td>424,2</td>
+            </tr>
+            <tr>
+                <td>MADERA TERCIADA</td>
+                <td>103.409</td>
+                <td>77,9</td>
+                <td>753,5</td>
+            </tr>
+            <tr>
+                <td>FIBRA DE ALGODON</td>
+                <td>98.258</td>
+                <td>83,1</td>
+                <td>845,9</td>
+            </tr>
+            <tr>
+                <td>PAPEL, CARTON, CARTULINA</td>
+                <td>93.416</td>
+                <td>96,0</td>
+                <td>1.027,4</td>
+            </tr>
+            <tr>
+                <td>CARBON MINERAL Y LEÑA</td>
+                <td>53.217</td>
+                <td>57,9</td>
+                <td>1.088,7</td>
+            </tr>
+            <tr>
+                <td>ANANA, BANANA Y OTRAS FRUTAS TROPICALES</td>
+                <td>43.529</td>
+                <td>56,7</td>
+                <td>1.302,1</td>
+            </tr>
+            <tr>
+                <td>CERAMICA ROJA Y LADRILLOS</td>
+                <td>43.520</td>
+                <td>10,9</td>
+                <td>250,8</td>
+            </tr>
+            <tr>
+                <td>MADERA SIN ELABORAR</td>
+                <td>39.185</td>
+                <td>12,7</td>
+                <td>323,0</td>
+            </tr>
+            <tr>
+                <td>CELULOSA</td>
+                <td>34.426</td>
+                <td>11,0</td>
+                <td>320,7</td>
+            </tr>
+            <tr>
+                <td>ALIMENTOS BALANCEADOS</td>
+                <td>32.930</td>
+                <td>17,8</td>
+                <td>541,0</td>
+            </tr>
+            <tr>
+                <td>GANADO CABALLAR</td>
+                <td>32.627</td>
+                <td>11,2</td>
+                <td>342,0</td>
+            </tr>
+            <tr>
+                <td>OTROS PRODUCTOS DE ORIGEN ANIMAL</td>
+                <td>31.024</td>
+                <td>16,7</td>
+                <td>539,7</td>
+            </tr>
+            <tr>
+                <td>AGREGADOS PARA LA CONSTRUCCION (INC. GRANITO TRITURADO, BASALTO, TOSCA, CUARCITA, LECA MARMOLITA, ETC.)</td>
+                <td>29.186</td>
+                <td>21,7</td>
+                <td>744,9</td>
+            </tr>
+            <tr>
+                <strong>
+                    <td>
+                        <strong>TOTAL</strong>
+                    </td>
+                    <td>
+                        <strong>4.616.479</strong>
+                    </td>
+                    <td>
+                        <strong>3.189,6</strong>
+                    </td>
+                    <td>
+                        <strong>690,9</strong>
+                    </td>
+                </strong>
+            </tr>
+        </table>
+        <p></p>
+
+        <p>La mitad de las toneladas están destinadas a la Ciudad Autónoma de Buenos Aires (19.9 millones).</p>
+
+        <p class="figure_header">
+            <strong>Figura 34:&nbsp;</strong>Flujos de transporte de productos tomados del estudio anterior, por destino provincial</p>
+
+        <div class="tableau_viz" id="figura34_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figura34_ONLINE_1_Redproductosanteriores/dashAnterior?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figura34_ONLINE_1_Redproductosanteriores/dashAnterior?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+
+        <h2 id="_Toc400361322">D. Flujos de transporte relevados</h2>
+
+        <p>Todos los productos descriptos en los apartados anteriores configuran la matriz origen-destino de flujos de transporte relevados para este estudio. El cartograma de estos flujos arroja un gráfico como el siguiente para la red vial de transporte de cargas en Argentina.</p>
+
+        <p class="figure_header">
+            <strong>Figura 35:&nbsp;</strong>Flujos de transporte totales sobre la red vial</p>
+
+        <div class="tableau_viz" id="figura35_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras35a40_ONLINE_MapasModelovs_RedDNV/dashRedModelo?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras35a40_ONLINE_MapasModelovs_RedDNV/dashRedModelo?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+
+
+        <p></p>
+
+        <p>La matriz origen-destino de las cargas relevadas en el estudio reúne finalmente unas 228,5 millones de toneladas que se desplazan unos 370 km en promedio. Esto significa que el volumen de tráfico total alcanza los 84.625 millones de toneladas-kilómetro.</p>
+
+        <p class="table_header">
+            <strong>Tabla 18:&nbsp;</strong>Parámetros de la matriz origen-destino de cargas relevadas, según tipo de tráfico</p>
+        <table id="tabla18_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Tipo de tráfico relevado</th>
+                <th>Toneladas equivalentes</th>
+                <th>Toneladas-kilómetro</th>
+                <th>Distancia media</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>unidades</td>
+                <td>milllones</td>
+                <td>km</td>
+            </tr>
+            <tr>
+                <td>Extrazona</td>
+                <td>163.447.770</td>
+                <td>80.068</td>
+                <td>490</td>
+            </tr>
+            <tr>
+                <td>Intrazona</td>
+                <td>65.094.147</td>
+                <td>4.557</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>228.541.917</strong></td>
+                <td><strong>84.625</strong></td>
+                <td><strong>370</strong></td>
+            </tr>
+        </table>
+        <p>Dentro de la matriz OD, se contabilizan 65 millones de toneladas que sólo se desplazan dentro de la zona de tráfico donde se originan. Para este tipo de carga no se cuenta con una estimación de distancia específica a cada para OD sino que se adoptó como parámetro una distancia de 70 km para todos aquellos pares origen-destino intrazonales.</p>
+
+        <p>Estos pares OD intrazonales constituyen un 28,5% del total de las toneladas equivalentes de la matriz pero sólo un 5,4% del total de toneladas-kilómetro. Es interesante destacar que, si excluimos los pares OD intrazonales de la matriz, la distancia media del resto del tráfico relevado asciende a 490 km.</p>
+
+    </div>
+    <br>
+    <br>
+    <div class="btn-group btn-group-justified">
+        <a href="parte2.html" class="btn btn-default">
+            <strong>Ir a Parte 2</strong>
+        </a>
+
+        <a href="http://www.blogdelcespa.blogspot.com.ar/#!http://blogdelcespa.blogspot.com/p/documentos-de-trabajo.html" class="btn btn-default">
+            <strong>Volver a Documentos de Trabajo</strong>
+        </a>
+
+        <a href="parte3.html" class="btn btn-default">
+            <strong>Ir a Parte 3</strong>
+        </a>
+    </div>
+    <!-- FIN barra de navegación al final del documento -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

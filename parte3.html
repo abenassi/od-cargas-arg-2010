@@ -1,0 +1,621 @@
+<html>
+
+<head>
+
+     <!-- establece codificacion utf-8 y otras opciones -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- linkea con las hojas de estilo -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- linkea con la hoja de javascript  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- titulo del documento -->
+    <title>Parte 3: Los tránsitos en la red vial</title>
+
+</head>
+
+<!-- cuerpo del documento -->
+
+<body>
+    <!-- barra de navegación principal -->
+    <div class="container">
+        ::before
+        <div class="bs-component">
+            <div class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <!-- Inicio dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inicio<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./index.html#">Inicio</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./index.html#_Toc392849621">Índice</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361295">Índice de figuras</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361296">Índice de tablas</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361297">Prólogo</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361298">Resumen</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Parte 1 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 1<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte1.html#">Parte 1: Modelo de la red de transporte</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte1.html#_Toc400361300">A. Modelar una red de transporte de cargas</a>
+                                </li>
+                                <li><a href="./parte1.html#_Toc400361305">B. Modelo de la red vial argentina</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 2 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 2<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte2.html#">Parte 2: Matriz origen-destino</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte2.html#_Toc400361310">A. Matriz de granos 2010</a>
+                                </li>
+                                <li><a href="./parte2.html#_Toc400361311">B. Matrices OD 2010 en base a datos de producción, consumo y comercio exterior</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 2 (bis) dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 2 (bis)<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte2_cont.html#">Parte 2 (bis): Matriz origen-destino</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte2_cont.html#_Toc400361321">C. Estudio anterior actualizado a 2010</a>
+                                </li>
+                                <li><a href="./parte2_cont.html#_Toc400361322">D. Flujos de transporte relevados</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 3 dropdown button -->
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 3<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte3.html#">Parte 3: Los tránsitos en la red vial</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte3.html#_Toc400361324">A. Rutas nacionales</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361325">B. Rutas provinciales</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361326">C. Discrepancias entre flujos viales y flujos asignados, y su tratamiento</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361327">D. Cobertura del modelo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 4 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 4<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte4.html#">Parte 4: Resultados obtenidos</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte4.html#conclusion1">Concentración de orígenes y destinos</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion2">Dominancia del sector primario</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion3">Bajas distancias recorridas</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion4">Alcance del modelo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Bibliografía normal button -->
+                        <li><a href="biblio.html">Bibliografía</a>
+                        </li>
+
+                        <!-- Anexo dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Anexo<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./anexo.html#">Anexo</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./anexo.html#_Toc400361331">A. Zonas de tráfico</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361332">B. Nodos conectivos</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361333">C. Partidos/ Departamentos por zona de tráfico</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361334">D. Extensión de la red vial nacional por provincia</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361335">E. Extensión de la red vial provincial por provincia</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361336">F. Toneladas reales y equivalentes, por producto</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361337">G. Lista de tramos de la red</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="visualizaciones.html">Visualizaciones</a>
+                        </li>
+                        <li><a href="descargas.html">Descargas</a>
+                        </li>
+                        <li><a href="http://www.blogdelcespa.blogspot.com.ar">CESPA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN barra de navegación principal -->
+    ::after
+
+    <!-- barra de navegación side -->
+    <ul id="sidebar" class="nav nav-pills nav-stacked">
+        <li class="panel panel-default active"><a href="#">Parte 3</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361324">A. Rutas nacionales</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361325">B. Rutas provinciales</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361326">C. Discrepancias entre flujos viales y flujos asignados, y su tratamiento</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361327">D. Cobertura del modelo</a>
+        </li>
+    </ul>
+    <!-- FIN barra de navegación side -->
+
+    <div id="documento">
+        <h1 id="_Toc400361323">Parte 3: Los tránsitos en la red vial</h1>
+
+        <p>Luego de estimar una matriz origen-destino es conveniente controlar el resultado obtenido. Ello se realiza mediante la comparación de los flujos de transporte relevados con datos de conteos de tránsito. Esto permite determinar si existen tráficos faltantes en la matriz origen-destino construida.</p>
+
+        <p>Como se verá más adelante, este control muestra que existe un conjunto no relevado de flujos de bienes cuyo transporte no pudo ser determinado debido a la carencia de datos.</p>
+
+        <p>Desafortunadamente no hay una forma de resolver satisfactoriamente este problema. En esta sección se presentará una posible solución para dar cuenta de los pares origen-destino omitidos (y sus tonelajes) a partir de los datos de tránsito disponibles y su comparación con la matriz OD representada anteriormente.</p>
+
+        <p>Para esto se realiza una estimación de las cargas pasantes por cada tramo del modelo de la red vial de cargas para la Argentina.</p>
+
+        <br />
+        <div class="well">
+            <p><b>Cómo interpretar datos de tráfico</b>
+            </p>
+
+            <p>Generalmente los datos de tráfico se expresan en una unidad de medida conocida como Tránsito Medio Diario Anual (TMDA). Esto es, la cantidad de unidades automotores que circulan por día en promedio por un tramo vial tomando los datos de un año entero.</p>
+
+            <p>Por ejemplo, según datos de la Dirección Nacional de Vialidad (DNV) en promedio pasan 4.522 unidades automotores por día en el recorrido nacional número 8 entre la salida de Arrecifes y la entrada a Pergamino.</p>
+
+            <p>Este dato sin embargo aún no es de utilidad para un estudio de cargas en tanto no se conozca la composición de esas 4.522 unidades automotores. Si todas fueran autos, significaría que por ese tramo no circulan cargas y por lo tanto está “vacío” a los efectos de este estudio.</p>
+
+            <p>La DNV informa que en ese tramo la proporción de autos que pasan es de 72,3%, la de ómnibus es de 3,5%, la de camiones con acoplado es de 6,4%, la de camiones sin acoplado es de 5,3% y la de semirremolques es de 12,5%. Esto significa que por ese tramo pasan en promedio 289 camiones con acoplado, 240 sin acoplado y 688 con semirremolques. Los autos y los ómnibus no transportan carga y por lo tanto no son de interés para el estudio.</p>
+
+            <p>Un camión con acoplado o semirremolque carga cerca de 30 toneladas de granel (la unidad de medida de las “toneladas equivalentes”, según se mencionó anteriormente), mientras que un camión sin acoplado sólo carga hasta 8 toneladas. Además de esto, hay que tener en cuenta que por lo general el camión va cargado y vuelve vacío, de manera que se cuenta la mitad de su capacidad de carga para transformar unidades de camiones pasantes por un tramo en toneladas equivalentes pasantes por el mismo[1].</p>
+
+            <p>Esto quiere decir que por el tramo “Arrecifes-Pergamino” pasan 4.341 toneladas equivalentes por día en promedio transportadas por camiones con acoplado, 959 por camiones sin acoplado y 8.479 por semirremolques. En total son 13.779 toneladas equivalentes por día o 5.029.164 por año.</p>
+
+            <p>La fórmula general para calcular las toneladas pasantes anuales para un tramo a partir de su TMDA y la composición del tráfico es entonces:</p>
+
+            <p>donde</p>
+
+            <ul>
+                <li>%CA: Porcentaje de camiones con acoplado</li>
+                <li>%SE: Porcentaje de semirremolques</li>
+                <li>%SA: Porcentaje de camiones sin acoplado</li>
+            </ul>
+
+        </div>
+
+        <p></p>
+
+        <b><br />
+</b>
+        <br />
+        <h2 id="_Toc400361324">A. Rutas nacionales</h2>
+
+        <p>La red vial interurbana de la Argentina se divide en tres grandes grupos de acuerdo a su jurisdicción: (a) red bajo jurisdicción nacional (a cargo de la Dirección Nacional de Vialidad); (b) red bajo jurisdicción de las provincias (a cargo de las Direcciones Provinciales de Vialidad), y (c) red bajo jurisdicción municipal o comunal.</p>
+
+        <p>A los fines de este trabajo haremos referencia únicamente a las vías pavimentadas que son las que conducen el grueso del tráfico de cargas.</p>
+
+        <p>Si bien la información disponible para las redes provinciales pavimentadas es escasa y fragmentaria, las evidencias indican que la mayor parte del tráfico tanto de cargas como de pasajeros circula por la red nacional. La red vial nacional tiene una extensión de 39.518 kilómetros de los cuales 35.214 son pavimentados
+            <href="#_ftn32" name="_ftnref32" title="">[32]</a>. Por su parte, las redes provinciales cuentan con un total de 43.550 km de rutas pavimentadas.</p>
+
+        <p>Para el año 2010, el de referencia de este estudio, la DNV ofrece datos de TMDA para 133 rutas que se subdividen en 1.324 tramos
+            <href="#_ftn33" name="_ftnref33" title="">[33]</a>. Por su parte solamente la provincia de Buenos Aires aporta información –no tan completa y actualizada como la de la DNV- sobre tránsitos.</p>
+
+        <p>Todos los tramos de la red nacional tienen una estimación de tránsito medio anual (TMDA); pero sólo algunos de ellos tienen además una estimación anual media de la composición del tráfico (diferenciando las TMDA en autos, camionetas, buses, camiones con acoplado, camiones sin acoplado y semirremolques). Otros tramos tienen, en cambio, estimaciones parciales no representativas de un año completo.</p>
+
+        <p>De todas maneras, más de la mitad de la red vial (en extensión) no cuenta con información alguna sobre clasificación de vehículos.</p>
+
+        <p class="table_header">
+            <strong>Tabla 19:&nbsp;</strong>Nivel de cobertura de los datos de composición de tráfico para la red vial nacional, respecto del total de tramos según la clasificación de la DNV</p>
+
+        <table border="1" cellspacing="0" cellpadding="0" align="center">
+            <tbody>
+                <tr>
+                    <td rowspan="3" align="center">
+                        <strong>133 rutas</strong>
+                    </td>
+                    <td rowspan="3" align="center">
+                        <strong>1324 tramos</strong>
+                    </td>
+                    <td class="green_box">
+                        175 tramos
+                        <br>(estimaciones anuales)
+                    </td>
+                    <td class="green_box">
+                        8.081 km
+                        <br>(20%)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="orange_box">
+                        334 tramos
+                        <br>(estimaciones parciales)
+                    </td>
+                    <td class="orange_box">
+                        10.185 km
+                        <br>(26%)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="red_box">
+                        815
+                        <br>(sin estimaciones)
+                    </td>
+                    <td class="red_box">
+                        21.637 km
+                        <br>(54%)
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        
+
+        <p>Hay 47 rutas que no tienen ninguna estimación de composición del tráfico pero 42 de ellas soportan tráfico principalmente urbano y por lo tanto no son de interés para este estudio
+            <href="#_ftn34" name="_ftnref34" title="">[34]</a>. Las 5 rutas restantes (2% de la extensión total de la red) que si son de interés (105, 131, 143, 151 y 259) simplemente carecen de datos de la DNV de composición del tráfico y tuvieron que ser estimadas por otros medios, cuando esto fue posible.</p>
+
+        <p class="table_header">
+            <strong>Tabla 20:&nbsp;</strong>Nivel de cobertura de los datos de composición de tráfico para la red vial nacional, respecto del total de rutas nacionales</p>
+
+        <table border="1" cellspacing="0" cellpadding="0" align="center">
+            <tbody>
+                <tr>
+                    <td rowspan="4">
+                        <strong>133 rutas</strong>
+                    </td>
+                    <td class="green_box">
+                        65 rutas
+                        <br>(al menos un tramo con estimación anual)
+                    </td>
+                    <td class="green_box" colspan="2">
+                        34.411 km
+                        <br>(86%)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="orange_box">
+                        21
+                        <br>(al menos un tramo con estimación parcial)
+                    </td>
+                    <td class="orange_box" colspan="2">
+                        2.104
+                        <br>(5%)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2" class="middle_text">
+                        <strong>47
+                            <br>(sin estimaciones)</strong>
+                    </td>
+                    <td class="grey_box">
+                        42
+                        <br>(principalmente tráfico urbano)
+                    </td>
+                    <td class="grey_box">
+                        2.749 km
+                        <br>(7%)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="red_box">
+                        5
+                        <br>(tráfico interurbano)
+                    </td>
+                    <td class="red_box">
+                        639 km
+                        <br>(2%)
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        
+
+        <p>En el caso de tramos para los que no se cuenta con información acerca de la composición del tránsito, y que se encuentran entre tramos donde tal información sí existe, ésta puede estimarse mediante una interpolación lineal entre los datos del último tramo de la ruta con información y los del próximo en tenerla. De manera tal que a partir de las rutas que tengan datos de composición del tráfico en algunos de sus tramos, pueden estimarse para aquellas partes intermedias de la ruta que no los tienen.</p>
+
+        <p>A partir de esta base de datos, se procedió a asociar cada tramo de la DNV a un tramo del modelo de la red vial. En el ejemplo siguiente se muestran los 5 tramos-DNV de la ruta 8 que fueron asociados al tramo 23-24 (Venado Tuerto – Pergamino) del modelo.</p>
+
+        <p class="figure_header">
+            <strong>Figura 36:&nbsp;</strong>Asociación de tramos de rutas reales a un tramo del modelo</p>
+
+        <img src="./images/figura_36.png">
+
+
+        <p></p>
+
+        <p>El siguiente paso es elegir cuál es el tramo cuyo tráfico es más representativo del movimiento de cargas entre las Zonas de Tráfico del modelo que se intenta capturar. De entre los tramos de la DNV que pudieron ser asignados y que cuentan con datos de tráfico y composición del mismo, se desprende que hay una media de 3,76 tramos de la DNV por tramo del modelo. La dispersión es además bastante alta: el máximo de “tramos-DNV” por “tramo-modelo” es de 11 y el mínimo de 1.</p>
+
+        <p>El criterio general para este caso es elegir el tramo-DNV <i>de menor tránsito</i> como el más representativo del tránsito interzonal relevante para el estudio (ie, del tráfico de cargas del tramo correspondiente en el modelo). Esto responde al hecho de que en proximidad de los centros urbanos, el tráfico registrado es mayor debido a transportes de corta distancia, que no son de interés para este trabajo.</p>
+
+        <p>Existen también casos donde esta regla opera en un sentido inadecuado. Esto es así cuando el tránsito se reduce drásticamente en el tramo más próximo al centro urbano debido a la existencia de rutas de circunvalación u otro tipo de recorridos alternativos. En estos casos se tomó el tramo de menor tránsito excluyendo los tramos más cercanos a los centros urbanos.</p>
+
+        <p>Cabe aclarar que un tramo del modelo puede estar representando el tránsito de 2 rutas nacionales simultáneamente. De todas formas, de los 179 tramos del modelo que pudieron ser asociados a alguna ruta nacional, sólo 7 tienen 2 rutas nacionales asociadas. El resto de ellos está asociado a una sola ruta nacional.</p>
+
+        <p>El siguiente mapa representa el modelo de la red vial cargado con el tránsito que surge de los datos de la DNV. Debe advertirse que el mismo no está completo. Hay dos tipos de tramos faltantes: (a) aquéllos que tienen una ruta nacional pero no hay suficientes datos para estimar las cargas pasantes y (b) aquéllos que no tienen ruta nacional (dependen de rutas provinciales).</p>
+
+        <p class="figure_header">
+            <strong>Figura 37:&nbsp;</strong>Flujos de transporte sobre la red vial nacional a partir de datos de tránsito de la DNV</p>
+
+        <div class="tableau_viz" id="figura37_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras35a40_ONLINE_MapasModelovs_RedDNV/dashRedDNV?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras35a40_ONLINE_MapasModelovs_RedDNV/dashRedDNV?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+
+        <p></p>
+
+        <b><br />
+</b>
+        <h2 id="_Toc400361325">B. Rutas provinciales</h2>
+
+        <p>Existen 43.550 km de rutas provinciales pavimentadas, de los cuales 10.657 (un cuarto del total) pertenecen a la provincia de Buenos Aires
+            <href="#_ftn35" name="_ftnref35" title="">[35]</a>. Desafortunadamente casi no existen datos de tránsito de las rutas provinciales; únicamente la provincia de Buenos Aires tiene algunos datos y además no son todos del mismo año (entre 2003 y 2011, según la ruta). En algunos casos incluso hubo datos que tuvieron que ser desechados por no resultar consistentes entre sí.</p>
+
+        <p>Esto plantea inconvenientes ya que algunos tramos fuera de la provincia de Buenos Aires representan tránsito entre zonas que utiliza alguna ruta provincial importante. Sin embargo el tránsito de la red vial provincial de Buenos Aires (que es en donde más relevancia tienen las rutas provinciales) pudo ser estimado siguiendo el mismo método que en el caso de las rutas nacionales. Los resultados son presentados en la figura siguiente.</p>
+
+        <p class="figure_header">
+            <strong>Figura 38:&nbsp;</strong>Flujos de transporte sobre la red vial provincial de la provincia de Buenos Aires a partir de datos de tránsito</p>
+
+        <div class="tableau_viz" id="figura38_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras35a40_ONLINE_MapasModelovs_RedDNV/dashRedPBA?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras35a40_ONLINE_MapasModelovs_RedDNV/dashRedPBA?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+
+        <p></p>
+
+        <p>Existen varios tramos faltantes que no tenían datos o, si los tenían, no eran del todo confiables (porque eran muy antiguos -2003- o porque eran inconsistentes con los datos de otras rutas).</p>
+
+        <p>Incorporando los datos de la red vial provincial de Buenos Aires a los de la DNV, nos quedaría un mapa de tráficos de la red vial “real” como el que sigue a continuación.</p>
+
+        <p class="figure_header">
+            <strong>Figura 39:&nbsp;</strong>Flujos de transporte sobre la red vial nacional y la red vial provincial de la provincia de Buenos Aires a partir de datos de tránsito</p>
+
+        <div class="tableau_viz" id="figura39_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras35a40_ONLINE_MapasModelovs_RedDNV/dashRedDNVPBA?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras35a40_ONLINE_MapasModelovs_RedDNV/dashRedDNVPBA?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+
+        <p></p>
+
+        <b><br />
+</b>
+        <h2 id="_Toc400361326">C. Discrepancias entre flujos viales y flujos asignados, y su tratamiento</h2>
+
+        <p>Disponiendo entonces del resultado de la asignación de tráficos del modelo por un lado y de la estimación de tráficos con base en los datos de la DNV y la Provincia de Buenos Aires por otro, se puede contrastar el resultado del modelo y detectar sus desviaciones respecto de la estimación de los flujos reales de tráfico basada en los datos de las direcciones de vialidad nacional y provincial.</p>
+
+        <p>En el siguiente mapa el grosor de los tramos indica la magnitud de la desviación del modelo respecto de los flujos de tráfico estimados. El color verde indica que, desde el punto de vista del modelo, el tramo debería “crecer” ya que los flujos estimados de tráfico son mayores que los representados por el modelo. El color rojo indica los casos en los que el modelo asignó a un tramo mayor tráfico del que sugieren las estimaciones basadas en los datos de tránsito.</p>
+
+        <p class="figure_header">
+            <strong>Figura 40:&nbsp;</strong>Discrepancias entre los flujos de tránsito relevados y los estimados a partir de datos de tránsito (DNV+PBA)</p>
+
+        <div class="tableau_viz" id="figura40_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras35a40_ONLINE_MapasModelovs_RedDNV/dashModeloVsDNVPBA?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras35a40_ONLINE_MapasModelovs_RedDNV/dashModeloVsDNVPBA?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+
+        <p></p>
+
+        <p>En la mayoría de los casos el mapa indica tráficos faltantes en el modelo (verde), lo que es consistente con el hecho de que no se dispone de datos suficientes de todos los sectores productivos que originan tráfico de cargas para estimar su matriz origen-destino.</p>
+
+        <p>Suponiendo que la asignación de recorridos para cada par OD en el modelo fue correcta en la mayoría de los casos, estos tramos con tráfico faltante origen-destino indican el tráfico de cargas no relevadas, que no fueron incluidos en el modelo.</p>
+
+        <p>Proponemos aquí una metodología para estimar la configuración de estos tráficos no relevados, a efectos de obtener alguna noción acerca de su magnitud y localización.</p>
+
+        <p>En principio, hay innumerables combinaciones posibles de pares OD que podrían cubrir este tráfico faltante detectado. Destacamos dos opciones, que en cierta medida son extremas, en términos de la distancia media de transporte</p>
+
+        <ol>
+            <li>La combinación de pares OD que minimiza la distancia media de la matriz de “pares OD implícitos” es aquélla en la que cada tramo se convierte en un par OD en sí mismo con un tonelaje igual al tráfico faltante para alcanzar las estimaciones basadas en los datos de vialidad. Adoptar esta posibilidad implicaría suponer que las cargas no determinadas en el modelo se desplazan lo mínimo posible, sólo hasta una zona de tráfico contigua.</li>
+            <br>
+            <li>Otra posibilidad es buscar aquel conjunto de “pares OD implícitos” que, por el contrario, maximiza la distancia media, mediante algún algoritmo apropiado.</li>
+        </ol>
+
+        <p>Optamos aquí por una tercera opción intermedia; ella consiste en obtener una matriz OD que arroje como distancia el promedio entre las distancias medias mínima y máxima posibles. Esto es, se obtendrán las distancias medias de transporte conforme a lo indicado en a) y b), se obtendrá el promedio entre ellas, y mediante un algoritmo similar al empleado para b), se estimará la matriz OD de tráficos no relevados.</p>
+
+        <p>El algoritmo para el cálculo detallado en b) consiste en un ejercicio de optimización de las siguientes características:</p>
+
+        <ul>
+            <li><b>Variables</b>. Cada par OD posible (Ver B.3. “Recorridos entre pares de nodos” en la “Parte 1” para el cálculo de los pares OD teóricamente posibles en la red) fue inicializado con un tonelaje igual a 0. Las variables a resolver del problema de optimización son los tonelajes de todos los pares OD teóricamente posibles de la red (siendo que estos pueden adoptar el valor nulo, si es que este par OD no resulta elegido).</li>
+            <br>
+            <li><b>Restricciones</b>. Las restricciones del ejercicio residen en el tráfico a asignar a cada uno de los tramos de la red. Como vimos recién, cada tramo tiene un “tráfico faltante” que debe ser asignado al mismo mediante la carga de tonelaje en algún par OD posible que utilice ese tramo. Las distintas combinaciones de tonelaje cargado en los pares OD posibles deben respetar la restricción de cargar en cada tramo de la red exactamente el tráfico que le falta. Esto es, el “tráfico faltante” de cada tramo establece el valor máximo que este tramo puede recibir.</li>
+            <br>
+            <li><b>Objetivo</b>. La suma de toneladas-kilómetro en cualquier caso es fija; está determinada por el tráfico faltante en cada tramo (sólo debe multiplicarse la distancia de cada tramo por el tonelaje faltante), de manera que minimizar o maximizar la distancia media, es lo mismo que maximizar o minimizar respectivamente las toneladas asignadas a la matriz. Se adoptó entonces la suma de las toneladas asignadas a todos los pares OD posibles como objetivo del ejercicio de optimización
+                <href="#_ftn36" name="_ftnref36" title="">[36]</a>.</li>
+        </ul>
+
+        <p>Elegir los “pares OD implícitos” que maximicen la distancia media implicaría asumir que las cargas no determinadas en el modelo se desplazan lo más lejos posible de su zona de origen, cumpliendo con las restricciones de tráfico faltante por tramo.</p>
+
+        <p>Así, la matriz de “pares OD implícitos” que surge de contrastar el modelo construido con los datos de vialidad, depende de la elección de una distancia media que se ubique entre un mínimo y un máximo posibles, dadas las restricciones del problema de optimización.</p>
+
+        <p>El criterio elegido, como se mencionó, en este caso fue el de adoptar el promedio entre las distancias medias mínima y máxima posibles.</p>
+
+        <p>Se repitió entonces el ejercicio de optimización buscando la configuración de pares OD que arrojara esta distancia media y se incorporó al modelo como una matriz origen-destino de “cargas no relevadas” o implícitas
+            <href="#_ftn37" name="_ftnref37" title="">[37]</a>.</p>
+
+        <p class="table_header">
+            <strong>Tabla 21:&nbsp;</strong>Principales parámetros de matrices origen-destino posibles para los “pares OD implícitos”</p>
+        <table id="tabla21_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Distancia media</th>
+                <th>Toneladas equivalentes</th>
+                <th>Toneladas-kilómetro</th>
+                <th>Distancia media</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>unidades</td>
+                <td>milllones</td>
+                <td>km</td>
+            </tr>
+            <tr>
+                <td>Mínima</td>
+                <td>369.150.159</td>
+                <td>41.898</td>
+                <td>113</td>
+            </tr>
+            <tr>
+                <td>Promedio</td>
+                <td>180.371.625</td>
+                <td>41.898</td>
+                <td>232</td>
+            </tr>
+            <tr>
+                <td>Máxima</td>
+                <td>119.354.880</td>
+                <td>41.898</td>
+                <td>351</td>
+            </tr>
+        </table>
+        <p></p>
+
+        <p>Este ejercicio debe ser entendido sólo como una aproximación tentativa y provisoria a los pares OD que faltan en el modelo, a los fines de adquirir una visión lo más completa posible de la configuración de la red vial de transporte. Para un resultado más preciso deberán encararse estudios más profundos, incluyendo una encuesta nacional de cargas de gran alcance.</p>
+
+        <b><br />
+</b>
+        <h2 id="_Toc400361327">D. Cobertura del modelo</h2>
+
+        <p>Una vez calculados los “pares OD implícitos” se puede analizar cuál es la cobertura de la matriz origen-destino estimada respecto del total de tráfico que circula por el país, según las estimaciones realizadas en base a datos de conteo de tránsito.</p>
+
+        <p>La distancia media de la matriz OD de cargas no relevadas es sustancialmente menor que la de las cargas relevadas: 232 km vs 370 km. Esto provoca que la inclusión de los pares OD implícitos en la matriz OD redunde en una baja de la distancia media total hasta los 309 km. Esto permite inferir que la carga omitida es probablemente carga que recorre cortas distancias.</p>
+
+        <p class="table_header">
+            <strong>Tabla 22:&nbsp;</strong>Comparación de los resultados generales del modelo con la estimación de tráficos reales totales</p>
+        <table id="tabla22_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Modelo</th>
+                <th>Toneladas equivalentes</th>
+                <th>Toneladas-kilómetro</th>
+                <th>Distancia media</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>unidades</td>
+                <td>milllones</td>
+                <td>km</td>
+            </tr>
+            <tr>
+                <td>Cargas relevadas</td>
+                <td>228.541.917</td>
+                <td>84.625</td>
+                <td>370</td>
+            </tr>
+            <tr>
+                <td>Cargas no relevadas</td>
+                <td>180.371.625</td>
+                <td>41.898</td>
+                <td>232</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Total</strong>
+                </td>
+                <td>
+                    <strong>408.913.542</strong>
+                </td>
+                <td>
+                    <strong>126.523</strong>
+                </td>
+                <td>
+                    <strong>309</strong>
+                </td>
+            </tr>
+        </table>
+        <p></p>
+
+        <p>A partir de esta tabla se puede calcular el nivel de cobertura de los flujos de transporte totales alcanzado por la matriz OD de cargas relevadas:</p>
+
+        <ul>
+            <li>56% de las toneladas</li>
+            <li>67% de las toneladas-kilómetro</li>
+        </ul>
+
+        <p>El resto constituye nuestra “medida de lo desconocido”: aquél tráfico que según los datos de tránsito estimamos que circula por la red vial del país, pero que no ha podido ser relevado a partir de datos de producción, consumo y comercio de productos identificados.</p>
+
+        <p>Cabe recordar que los datos de tránsito utilizados para esta estimación no son completos. Únicamente se cuenta con información del tránsito pasante por la red vial nacional y por la red vial provincial de la Provincia de Buenos Aires. En esta estimación, por lo tanto, no se tuvieron en cuenta los tráficos no relevados que pudiera haber en las rutas provinciales aparte de la Provincia de Buenos Aires. Sin embargo, en general se presume que el tráfico circulante por estas rutas es mucho menor que el soportado por las rutas nacionales.</p>
+
+        <p>El tonelaje originado por los “pares OD implícitos” es entonces, de alguna manera, una estimación de aquellas cargas que todavía falta encontrar en la red vial de transporte argentina para dar mayor confiabilidad al análisis.</p>
+
+        <p class="figure_header">
+            <strong>Figura 41:&nbsp;</strong>Toneladas de “pares OD implícitos”, por origen provincial (millones de toneladas equivalentes)</p>
+            <img src="./images/figura_41.png" alt="">
+
+        <p>Como ya lo sugería el mapa de la sección anterior, donde se mostraban las discrepancias entre los datos de tráfico y la red generada por el modelo, entre la provincia y la ciudad de Buenos Aires está más del 60% de las toneladas no relevadas estimadas. Si añadimos a Córdoba y Santa Fe, estas 3 provincias más la ciudad de Buenos Aires reúnen a más del 80% de las toneladas implícitas estimadas en este modelo.</p>
+
+        <p>Futuras investigaciones deberían profundizar el estudio de la carga que se origina en estos distritos, especialmente en Buenos Aires, cuestión nada fácil teniendo en cuenta que la alta densidad poblacional genera una multiplicidad de tráficos difíciles de discriminar.</p>
+
+        <b><br />
+</b>
+
+    </div>
+
+    <br>
+    <br>
+    <div class="btn-group btn-group-justified">
+        <a href="parte2_cont.html" class="btn btn-default">
+            <strong>Ir a Parte 2 (Continuación)</strong>
+        </a>
+
+        <a href="http://www.blogdelcespa.blogspot.com.ar/#!http://blogdelcespa.blogspot.com/p/documentos-de-trabajo.html" class="btn btn-default">
+            <strong>Volver a Documentos de Trabajo</strong>
+        </a>
+
+        <a href="parte4.html" class="btn btn-default">
+            <strong>Ir a Parte 4</strong>
+        </a>
+    </div>
+    <!-- FIN barra de navegación al final del documento -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

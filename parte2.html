@@ -1,0 +1,951 @@
+<html>
+
+<head>
+
+     <!-- establece codificacion utf-8 y otras opciones -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- linkea con las hojas de estilo -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- linkea con la hoja de javascript  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- titulo del documento -->
+    <title>Parte 2: Matriz origen-destino</title>
+
+</head>
+
+<!-- cuerpo del documento -->
+
+<body>
+   <!-- barra de navegación principal -->
+    <div class="container">
+        ::before
+        <div class="bs-component">
+            <div class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <!-- Inicio dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inicio<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./index.html#">Inicio</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./index.html#_Toc392849621">Índice</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361295">Índice de figuras</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361296">Índice de tablas</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361297">Prólogo</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361298">Resumen</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Parte 1 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 1<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte1.html#">Parte 1: Modelo de la red de transporte</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte1.html#_Toc400361300">A. Modelar una red de transporte de cargas</a>
+                                </li>
+                                <li><a href="./parte1.html#_Toc400361305">B. Modelo de la red vial argentina</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 2 dropdown button -->
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 2<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte2.html#">Parte 2: Matriz origen-destino</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte2.html#_Toc400361310">A. Matriz de granos 2010</a>
+                                </li>
+                                <li><a href="./parte2.html#_Toc400361311">B. Matrices OD 2010 en base a datos de producción, consumo y comercio exterior</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 2 (bis) dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 2 (bis)<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte2_cont.html#">Parte 2 (bis): Matriz origen-destino</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte2_cont.html#_Toc400361321">C. Estudio anterior actualizado a 2010</a>
+                                </li>
+                                <li><a href="./parte2_cont.html#_Toc400361322">D. Flujos de transporte relevados</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 3 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 3<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte3.html#">Parte 3: Los tránsitos en la red vial</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte3.html#_Toc400361324">A. Rutas nacionales</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361325">B. Rutas provinciales</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361326">C. Discrepancias entre flujos viales y flujos asignados, y su tratamiento</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361327">D. Cobertura del modelo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 4 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 4<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte4.html#">Parte 4: Resultados obtenidos</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte4.html#conclusion1">Concentración de orígenes y destinos</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion2">Dominancia del sector primario</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion3">Bajas distancias recorridas</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion4">Alcance del modelo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Bibliografía normal button -->
+                        <li><a href="biblio.html">Bibliografía</a>
+                        </li>
+
+                        <!-- Anexo dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Anexo<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./anexo.html#">Anexo</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./anexo.html#_Toc400361331">A. Zonas de tráfico</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361332">B. Nodos conectivos</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361333">C. Partidos/ Departamentos por zona de tráfico</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361334">D. Extensión de la red vial nacional por provincia</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361335">E. Extensión de la red vial provincial por provincia</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361336">F. Toneladas reales y equivalentes, por producto</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361337">G. Lista de tramos de la red</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="visualizaciones.html">Visualizaciones</a>
+                        </li>
+                        <li><a href="descargas.html">Descargas</a>
+                        </li>
+                        <li><a href="http://www.blogdelcespa.blogspot.com.ar">CESPA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN barra de navegación principal -->
+
+    ::after
+
+    <!-- barra de navegación side -->
+    <ul id="sidebar" class="nav nav-pills nav-stacked">
+        <li class="panel panel-default active"><a href="#">Parte 2</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361310">A. Matriz de granos 2010</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361311">B. Matrices OD 2010 en base a datos de producción, consumo y comercio exterior</a>
+        </li>
+    </ul>
+    <!-- FIN barra de navegación side -->
+
+    <div id="documento">
+        <h1 id="head_parte2">Parte 2: Matriz origen-destino</h1>
+
+        <p>La matriz origen-destino utilizada en este estudio fue construida a partir de tres fuentes de datos principales:</p>
+
+        <ol>
+            <li><b>Matriz origen-destino de granos 2010 (Polo y Sanguinetti 2012). </b>Reconstruyen los flujos de transporte de soja, maíz, trigo, girasol, sorgo y derivados.</li>
+            <br>
+            <li><b>Matrices origen-destino (2010) en base a datos de producción, consumo y comercio exterior</b>. Se confeccionaron en base a estimaciones propias basadas en fuentes de datos públicas, sectoriales y entrevistas a referentes de la actividad.</li>
+            <br>
+            <li><b>Estudio anterior (Müller 1994) actualizado a 2010. </b>Es una actualización hecha por cantidades
+                <href="#_ftn13" name="_ftnref13" title="">[13]</a>de 2010 de un estudio anterior (Müller 1994) en el que se realizaba un ejercicio similar al de este trabajo (aunque de menor alcance) para esa época. A su vez, los datos de este estudio se basan en una actualización de la encuesta de cargas de 1982 realizada por la Secretaría de Transporte. En los casos en los que no se pudo reconstruir una matriz OD con datos actuales, se optó por mantener las matrices actualizadas por cantidades del estudio anterior. Si bien los datos no reflejan adecuadamente la situación actual, parece más conveniente incorporarlos, antes que excluirlos
+                    <href="#_ftn14" name="_ftnref14" title="">[14]</a>.</li>
+        </ol>
+
+        <p><i>Toneladas reales y toneladas equivalentes</i>
+        </p>
+
+        <p>A fin de reflejar adecuadamente los flujos vehiculares que corresponden a cada tipo de producto, deben tenerse en cuenta las diferentes densidades de las cargas. Mientras que cargas muy densas completan la capacidad de transporte del camión en términos de su tonelaje máximo posible, otras cargas completan la capacidad en términos de volumen, antes que de peso. Si los volúmenes transportados se encuentran medidos en toneladas, esto significará que cada camión transportará más o menos toneladas, en función de la circunstancia indicada</p>
+
+        <p>Por ejemplo, el transporte de graneles tales como maíz o piedra completa la capacidad de carga del camión, en términos de peso, que es de alrededor de 30 toneladas. En cambio, el transporte de ganado en pie completa la capacidad del camión en un peso de alrededor de 10 toneladas
+            <href="#_ftn15" name="_ftnref15" title="">[15]</a>.</p>
+
+        <p>A fin de normalizar la medición de lo transportado, el modelo opera en términos de “toneladas equivalentes”. Se toma como referencia la cantidad de toneladas de granel que se llevan en un camión semirremolque o con acoplado (como se indicó, 30 toneladas). Es decir, para un par origen-destino en el que se transportan 300.000 toneladas por año debe entenderse que se despachan 10.000 camiones por año cargados con ese producto.</p>
+
+        <p>El peso de aquellos productos que no son graneles o tienen una relación peso/volumen muy distinta debe ser recalculados en términos de toneladas equivalentes de graneles. A tal efecto, se calcula un “factor de equivalencia” que convierte toneladas “reales” en toneladas “equivalentes”.</p>
+
+        <p>Por ejemplo, el tabaco es un producto de baja relación peso/volumen. Un camión transporta como máximo unas 10 toneladas de tabaco. Su factor de equivalencia es de 3: 30 toneladas de tabaco corresponden a 90 toneladas equivalentes de granel. Se necesitan 3 camiones para despachar 30 toneladas de tabaco.</p>
+
+        <p>A partir de aquí se hablará generalmente en términos de toneladas equivalentes. Cuando sólo se hable de “toneladas” sin especificación adicional, deberá interpretarse que se habla de “toneladas reales”. En el caso de la mayoría de los productos primarios que se transportan a granel (soja, maíz, aceites, maní, etc.) las “toneladas reales” coinciden con las “toneladas equivalentes” ya que, como se explicó anteriormente, justamente se toma a los graneles típicos transportados en camiones semirremolque o con acoplado como la unidad de equivalencia a partir de la cual se homogeneiza el tratamiento del resto de los productos.</p>
+
+        <p>En estos casos se puede encontrar la referencia directamente como “toneladas” (sin aparte incluir el dato de “toneladas equivalentes”) y debe entenderse que el dato refiere indistintamente a toneladas reales o equivalentes.</p>
+
+        <p>Cuando se hable de “toneladas-kilómetro” siempre se tratará de “toneladas equivalentes-kilómetro”. En ningún caso se usará este indicador calculado sobre “toneladas reales” (salvo, por supuesto, en el caso de los graneles ya que su factor de equivalencia es 1).</p>
+
+        <p>La tabla 1 indica los volúmenes relevados de tráficos, en términos de toneladas equivalentes, distinguiendo las tres fuentes mencionadas.</p>
+
+        <p class="table_header">
+            <strong>Tabla 1:&nbsp;</strong>Principales fuentes de la matriz origen-destino</p>
+
+        <table id="tabla1_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Origen de los datos</th>
+                <th>Toneladas equivalentes</th>
+                <th>Toneladas-kilómetro</th>
+                <th>Distancia media</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>unidades</td>
+                <td>milllones</td>
+                <td>km</td>
+            </tr>
+            <tr>
+                <td>Estudio anterior</td>
+                <td>4.616.479</td>
+                <td>3.190</td>
+                <td>691</td>
+            </tr>
+            <tr>
+                <td>Matriz de granos</td>
+                <td>107.167.463</td>
+                <td>26.852</td>
+                <td>251</td>
+            </tr>
+            <tr>
+                <td>Nuevas matrices estimadas</td>
+                <td>116.757.975</td>
+                <td>54.583</td>
+                <td>467</td>
+            </tr>
+            <tr>
+
+                <td>
+                    <strong>TOTAL</strong>
+                </td>
+                <td>
+                    <strong>228.541.917</strong>
+                </td>
+                <td>
+                    <strong>84.625</strong>
+                </td>
+                <td>
+                    <strong>370</strong>
+                </td>
+
+            </tr>
+        </table>
+
+        <p></p>
+
+        <p>En los apartados siguientes, se detallan los procedimientos empleados por cada fuente.</p>
+
+        <br />
+        <h2 id="_Toc400361310">A. Matriz de granos 2010</h2>
+
+        <p>Las matrices origen-destino de los principales granos fueron tomadas del informe “Requerimientos de Transporte para la Producción Agrícola, Horizonte 2020” elaborado por Carmen Polo y Mariana Sanguinetti, bajo la dirección de Alberto Müller (Polo y Sanguinetti 2012).</p>
+
+        <p>Este trabajo estimó los pares origen-destino a partir de información sobre localización de los cultivos y de los centros de procesamiento o exportación, determinando los pares correspondientes a partir de un procedimiento que buscó minimizar los recorridos en tierra. En otros términos, no se trata de información acerca de los efectivos pares origen-destino, sino de una estimación razonable.</p>
+
+        <p>Estas matrices incluyen a los 5 principales cultivos granarios de la Argentina y sus productos derivados: Girasol, Maíz, Soja, Trigo y Sorgo.</p>
+
+        <p class="table_header">
+            <strong>Tabla 2:&nbsp;</strong>Productos provenientes de la matriz origen-destino de granos</p>
+        <table id="tabla2_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Producto</th>
+                <th>Toneladas (1)</th>
+                <th>Toneladas-kilómetro</th>
+                <th>Distancia media</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>unidades</td>
+                <td>milllones</td>
+                <td>km</td>
+            </tr>
+            <tr>
+                <td>SOJA</td>
+                <td>47.591.688</td>
+                <td>14.659,9</td>
+                <td>308,0</td>
+            </tr>
+            <tr>
+                <td>SUBPRODUCTOS DE LA MOLIENDA DE TRIGO Y DE OLEAGINOSAS (INC. EXPELLER, PELLETS, TORTAS, HARINAS, AFRECHO, AGRECHILLO, CASCATAR, ETC.)</td>
+                <td>21.269.302</td>
+                <td>2.021,8</td>
+                <td>95,1</td>
+            </tr>
+            <tr>
+                <td>MAIZ C.I.</td>
+                <td>16.022.352</td>
+                <td>4.620,6</td>
+                <td>288,4</td>
+            </tr>
+            <tr>
+                <td>TRIGO C.I.</td>
+                <td>13.288.701</td>
+                <td>3.791,6</td>
+                <td>285,3</td>
+            </tr>
+            <tr>
+                <td>ACEITE COMESTIBLE (INC. ALGODON GIRASOL, MAIZ, UVA, MANI, NABO, NABON Y COLZA, OLIVA, SOJA Y OTROS)</td>
+                <td>4.974.988</td>
+                <td>523,8</td>
+                <td>105,3</td>
+            </tr>
+            <tr>
+                <td>GIRASOL</td>
+                <td>2.224.307</td>
+                <td>594,1</td>
+                <td>267,1</td>
+            </tr>
+            <tr>
+                <td>SORGO</td>
+                <td>1.796.125</td>
+                <td>640,4</td>
+                <td>356,6</td>
+            </tr>
+            <tr>
+                <strong>
+                    <td>
+                        <strong>TOTAL</strong>
+                    </td>
+                    <td>
+                        <strong>107.167.463</strong>
+                    </td>
+                    <td>
+                        <strong>26.852,3</strong>
+                    </td>
+                    <td>
+                        <strong>250,6</strong>
+                    </td>
+                </strong>
+            </tr>
+        </table>
+
+        <p></p>
+
+        <p>A continuación se muestran cartogramas con los flujos de transporte para cada una de las matrices origen-destino de granos. Los colores de los tramos indican cuál fue el destino más relevante en 2010 para la carga que pasa por el tramo. En algunos casos hay un segundo destino que también es relevante y por lo tanto figuran 2 colores superpuestos.</p>
+
+        <p>El tipo de tráfico que se grafica en estos mapas es tráfico “extrazona”, es decir tráfico que se origina en una ZT y se dirige hacia otra distinta. Las barras horizontales que muestran la carga recibida por cada destino sólo cuentan el tráfico extrazona también. La cantidad de tráfico “intrazona” (con origen y destino en una misma ZT) que tiene el producto en cuestión se puede observar en el gráfico de barras “Tipo de tráfico”.</p>
+
+        <p class="figure_header">
+            <strong>Figura 8:&nbsp;</strong>Flujos de transporte de soja, por destino</p>
+
+        <div class="tableau_viz" id="figura8_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras9a13_ONLINE_2_Redesdegranos/dashSoja?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras9a13_ONLINE_2_Redesdegranos/dashSoja?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" ></iframe>
+        </div>
+        <p>
+            <href="#_ftn16" name="_ftnref16" title="">[16]</a>
+        </p>
+
+        <p>La soja fue en 2010 por lejos el grano que más se transportó en la Argentina. Cerca de 42 millones de toneladas se transportan a ZTs distintas a las de origen. De estas, 34 millones van a la zona de Rosario para exportación o para su uso en la fabricación de aceites y derivados. El área de cobertura de los puertos de Rosario para el despacho de la soja abarca el norte de la provincia de Buenos Aires, Córdoba, Entre Ríos, Santiago del Estero, Chaco, Tucumán, Salta y Santa Fe como las provincias más importantes. La zona de Bahía Blanca recibe la soja que se produce en el suroeste y centro de la provincia de Buenos Aires (además de algo de La Pampa) mientras que la de Necochea/Quequén recibe soja del sureste, centro y suroeste de la provincia (más algo de La Pampa también). La ZT Buenos Aires también tiene un rol, aunque menor, recibiendo producción de soja del noreste de la provincia (en proximidades de la ciudad, lógicamente).</p>
+
+        <p class="figure_header">
+            <strong>Figura 9:&nbsp;</strong>Flujos de transporte de maíz, por destino</p>
+
+        <div class="tableau_viz" id="figura9_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras9a13_ONLINE_2_Redesdegranos/dashMaiz?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras9a13_ONLINE_2_Redesdegranos/dashMaiz?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <p>El maíz generó mucho menos volumen de transporte que la soja, pero es de todas formas un cultivo muy importante. La zona de Rosario también domina como destino de la producción de maíz y las áreas de cobertura de las ZTs Bahía Blanca, Buenos Aires y Necochea/Quequén son similares a las de la soja si bien de bastante menor importancia. Existen también las ZTs de Chacabuco y Villa Mercedes como zonas receptoras de maíz extrazona.</p>
+
+        <p class="figure_header">
+            <strong>Figura 10:&nbsp;</strong>Flujos de transporte de trigo, por destino</p>
+
+        <div class="tableau_viz" id="figura10_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras9a13_ONLINE_2_Redesdegranos/dashTrigo?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras9a13_ONLINE_2_Redesdegranos/dashTrigo?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <p>El trigo tiene un cartograma ya más distinto que el de la soja y el maíz. El destino más importante en 2010 fue la zona de Buenos Aires, seguida por Rosario, Bahía Blanca, Córdoba, Necochea/Quequén, Santa Fe/Paraná y otras de volumen bastante más bajo. Buena parte del área de cobertura de la ZT Rosario en soja y maíz es ahora ocupada por zonas de la provincia de Córdoba que destinan su producción a la ZT Córdoba. La zona de Buenos Aires por su parte cubre la mayor parte la provincia homónima y existen otras ZTs receptoras menores en Corrientes/Resistencia, Santa Rosa, Salta y Villaguay.</p>
+
+        <p class="figure_header">
+            <strong>Figura 11:&nbsp;</strong>Flujos de transporte de girasol y sorgo, por destino</p>
+
+        <div class="tableau_viz" id="figura11_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras9a13_ONLINE_2_Redesdegranos/dashGirasolSorgo?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras9a13_ONLINE_2_Redesdegranos/dashGirasolSorgo?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <p>El sorgo y el girasol fueron cultivos mucho menos importantes que los anteriores. En el caso del girasol existen muchos destinos pero entre las ZTs Rosario, Bahía Blanca y General Villegas se va poco más de la mitad de todo el volumen que se transporta extrazona. En el caso del sorgo, la gran mayoría del volumen transportado se va por la zona de Rosario.</p>
+
+        <p class="figure_header">
+            <strong>Figura 12:&nbsp;</strong>Flujos de transporte de aceites y subproductos, por destino</p>
+
+        <div class="tableau_viz" id="figura12_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras9a13_ONLINE_2_Redesdegranos/dashSubprod?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras9a13_ONLINE_2_Redesdegranos/dashSubprod?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <p>En el caso de los aceites y subproductos, derivados de los cultivos granarios, se ve la particularidad de que el tráfico intrazona es abrumadoramente mayor que el extrazona (alrededor del triple). Esto se debe a que la mayor parte de la capacidad instalada para la producción de aceites y otros derivados está en los puertos y por lo tanto se producen y despachan en la misma zona. Entre los 4 destinos de los transportes extrazonales sobresale la zona de Rosario con más del 80% del tráfico recibido.</p>
+
+        <b><br />
+</b>
+        <h2 id="_Toc400361311">B. Matrices OD 2010 en base a datos de producción, consumo y comercio exterior</h2>
+
+        <p>Como se mencionó, la matriz origen-destino final se compone de la matriz origen-destino de granos, algunos productos de la matriz origen-destino 1994 (aquellos que no pudieron ser actualizados por falta de información) y 37 productos cuyas matrices OD se construyeron con datos actuales (2010).</p>
+
+        <p>A continuación, presentamos el tratamiento referido al tercer grupo.</p>
+
+        <h3 id="_Toc400361312">1. Metodología</h3>
+
+        <p>Salvando algunas cuestiones específicas de cada producto que se discuten más adelante, la construcción de las matrices OD de gran parte de estos productos se ajustó al siguiente esquema:</p>
+
+        <ol>
+            <li><b>Orígenes</b>. Se construyen los orígenes en base a datos de producción de fuentes oficiales o de las cámaras que agrupan a los empresarios del sector. Generalmente esta información está disponible a nivel de departamento, a veces se informa la localidad; pero en ocasiones hubo que realizar consultas a referentes del sector para desagregar geográficamente datos de producción para todo el país. Luego se relevan datos de importación y los puntos de entrada al territorio nacional. Una vez conseguida la localización geográfica de la producción y de la importación se zonifican los datos conforme al modelo de red construido.</li>
+            <br>
+            <li><b>Destinos</b>. Primero se identifican los datos de exportación. En la mayoría de los casos, utilizamos la base OPEX-INDEC
+                <href="#_ftn17" name="_ftnref17" title="">[17]</a>que provee datos de exportación por producto y por origen provincial. El punto de salida de los productos exportados se asigna dependiendo de los países de destino de la carga, del tipo de carga, de datos de aduana y de otras fuentes de información secundarias según el caso. Así se vinculan directamente los orígenes (se distribuye proporcionalmente a la producción en los casos donde hay más de un nodo de origen por provincia) con sus destinos. El saldo restante corresponde al consumo interno y (con importantes excepciones) se asigna en forma proporcional a la población de cada nodo, suponiendo que la composición del consumo per cápita a lo largo del país es relativamente estable.</li>
+            <br>
+            <li><b>Pares origen-destino</b>. Para la asignación de pares origen-destino se construyó una matriz con todos los casos posibles según los orígenes y los destinos que tenían carga asignada y se resolvió un problema de optimización donde las variables a determinar son la cantidad de toneladas que corresponde a cada par OD posible y la variable a minimizar es la sumatoria de las toneladas-kilómetro de cada par OD de la matriz. Esto significa que se busca generar pares OD de manera tal que se minimice la distancia media de la matriz, lo que implica que los usuarios de los bienes adquirirán aquéllos cuyo punto de producción se encuentre más próximo (bajo el supuesto, nuevamente, de que se toma siempre el camino más corto para llegar a destino). Las restricciones del problema consisten en que cada par OD para un mismo destino debe sumar la misma cantidad de toneladas que previamente se le asignó a ese destino y lo mismo en el caso de los orígenes. Al disponer de la distancia calculada de cada par OD y asignarle toneladas de carga, se calculan las toneladas-kilómetro que suman al sistema esas asignaciones, buscando minimizarlas.</li>
+        </ol>
+
+        <p>En el caso de las exportaciones, al contar con información por lo menos a nivel provincial de sus orígenes, la asignación de pares OD resultó más directa ya que se incorporaron al problema de optimización restricciones adicionales para que determinados pares OD tuvieran que tener un mínimo de carga correspondiente a la distribución de las exportaciones provinciales entre los nodos productores que componen la provincia.</p>
+
+        <h3 id="_Toc400361313">2. Agricultura, pesca, ganadería y derivados</h3>
+
+        <p>Las matrices de productos agrícolas (excluyendo granos), pesca y ganadería se basaron principalmente en datos del Ministerio de Agricultura de la base de datos del SIIA
+            <href="#_ftn18" name="_ftnref18" title="">[18]</a>que tiene información de producción a nivel de departamento. En esta categoría se relevaron casi 18 millones de toneladas equivalentes. A continuación se resumen los principales parámetros de cada matriz y luego se describen aspectos específicos de cada una. Nótese el elevado factor de corrección en el caso del ganado en pie y faenado.</p>
+
+        <p class="table_header">
+            <strong>Tabla 3:&nbsp;</strong>Productos agropecuarios y derivados, en base a datos de producción, consumo y comercio exterior</p>
+
+        <table id="tabla3_tabla" class="table table-striped table-hover ">
+            <tr>
+                <th>Producto</th>
+                <th>Toneladas</th>
+                <th>Factor de equivalencia</th>
+                <th>Toneladas equivalentes</th>
+                <th>Toneladas-kilómetro</th>
+                <th>Distancia media</th>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>ton</td>
+                <td>ton equiv / ton</td>
+                <td>ton</td>
+                <td>ton equiv</td>
+                <td>km</td>
+            </tr>
+            <tr>
+                <td>Ganado bovino (cria a invernada)</td>
+                <td>1.887.716</td>
+                <td>6,0</td>
+                <td>11.326.295</td>
+                <td>2.356,9</td>
+                <td>208,1</td>
+            </tr>
+            <tr>
+                <td>Ganado bovino (faena a consumo)</td>
+                <td>1.887.715</td>
+                <td>6,0</td>
+                <td>11.326.290</td>
+                <td>2.515,6</td>
+                <td>222,1</td>
+            </tr>
+            <tr>
+                <td>Ganado bovino (invernada a faena)</td>
+                <td>1.887.715</td>
+                <td>6,0</td>
+                <td>11.326.287</td>
+                <td>3.154,7</td>
+                <td>278,5</td>
+            </tr>
+            <tr>
+                <td>Ovino y caprino</td>
+                <td>677.925</td>
+                <td>6,0</td>
+                <td>4.067.547</td>
+                <td>4.882,6</td>
+                <td>1.200,4</td>
+            </tr>
+            <tr>
+                <td>Citricos</td>
+                <td>2.895.995</td>
+                <td>1,0</td>
+                <td>2.895.995</td>
+                <td>2.241,5</td>
+                <td>774,0</td>
+            </tr>
+            <tr>
+                <td>Manzana y pera</td>
+                <td>2.156.811</td>
+                <td>1,3</td>
+                <td>2.696.014</td>
+                <td>2.556,7</td>
+                <td>948,3</td>
+            </tr>
+            <tr>
+                <td>Papa</td>
+                <td>2.557.708</td>
+                <td>1,0</td>
+                <td>2.557.708</td>
+                <td>1.226,0</td>
+                <td>479,4</td>
+            </tr>
+            <tr>
+                <td>Ganado bovino (faena de achuras y descarte a consumo)</td>
+                <td>831.071</td>
+                <td>3,0</td>
+                <td>2.493.214</td>
+                <td>566,6</td>
+                <td>227,3</td>
+            </tr>
+            <tr>
+                <td>Azucar</td>
+                <td>2.038.189</td>
+                <td>1,0</td>
+                <td>2.038.189</td>
+                <td>2.405,0</td>
+                <td>1.180,0</td>
+            </tr>
+            <tr>
+                <td>Lacteos (leche)</td>
+                <td>1.765.742</td>
+                <td>1,0</td>
+                <td>1.765.742</td>
+                <td>595,3</td>
+                <td>337,1</td>
+            </tr>
+            <tr>
+                <td>Arroz</td>
+                <td>1.748.080</td>
+                <td>1,0</td>
+                <td>1.748.080</td>
+                <td>1.025,8</td>
+                <td>586,8</td>
+            </tr>
+            <tr>
+                <td>Granos finos</td>
+                <td>1.591.452</td>
+                <td>1,0</td>
+                <td>1.591.452</td>
+                <td>870,5</td>
+                <td>547,0</td>
+            </tr>
+            <tr>
+                <td>Lacteos (derivados)</td>
+                <td>1.555.269</td>
+                <td>1,0</td>
+                <td>1.555.269</td>
+                <td>516,4</td>
+                <td>332,0</td>
+            </tr>
+            <tr>
+                <td>Vinos</td>
+                <td>827.288</td>
+                <td>1,6</td>
+                <td>1.322.720</td>
+                <td>1.406,9</td>
+                <td>1.063,6</td>
+            </tr>
+            <tr>
+                <td>Yerba mate</td>
+                <td>804.457</td>
+                <td>1,0</td>
+                <td>804.457</td>
+                <td>989,0</td>
+                <td>1.229,4</td>
+            </tr>
+            <tr>
+                <td>Cebolla</td>
+                <td>796.912</td>
+                <td>1,0</td>
+                <td>796.912</td>
+                <td>588,8</td>
+                <td>738,8</td>
+            </tr>
+            <tr>
+                <td>Pesca</td>
+                <td>764.884</td>
+                <td>1,0</td>
+                <td>764.884</td>
+                <td>615,2</td>
+                <td>804,3</td>
+            </tr>
+            <tr>
+                <td>Mani</td>
+                <td>579.696</td>
+                <td>1,0</td>
+                <td>579.696</td>
+                <td>349,1</td>
+                <td>602,3</td>
+            </tr>
+            <tr>
+                <td>Tabaco</td>
+                <td>135.066</td>
+                <td>3,0</td>
+                <td>405.199</td>
+                <td>404,9</td>
+                <td>999,3</td>
+            </tr>
+            <tr>
+                <td>Te</td>
+                <td>92.211</td>
+                <td>4,3</td>
+                <td>395.587</td>
+                <td>455,2</td>
+                <td>1.150,7</td>
+            </tr>
+            <tr>
+                <td>Legumbres</td>
+                <td>338.119</td>
+                <td>1,0</td>
+                <td>338.119</td>
+                <td>452,6</td>
+                <td>1.338,6</td>
+            </tr>
+            <tr>
+                <td>Cigarrillos</td>
+                <td>210.104</td>
+                <td>1,0</td>
+                <td>210.104</td>
+                <td>88,5</td>
+                <td>421,4</td>
+            </tr>
+            <tr>
+                <strong>
+                    <td>
+                        <strong>TOTAL</strong>
+                    </td>
+                    <td>
+                        <strong>28.030.125</strong>
+                    </td>
+                    <td>
+                        <strong>2,24</strong>
+                    </td>
+                    <td>
+                        <strong>63.005.760</strong>
+                    </td>
+                    <td>
+                        <strong>30.263,8</strong>
+                    </td>
+                    <td>
+                        <strong>480,3</strong>
+                    </td>
+                </strong>
+            </tr>
+        </table>
+
+        <p></p>
+
+        <i><br />
+</i>
+        <p><i>Papa</i>
+        </p>
+
+        <p>Los últimos datos del SIIA para este producto desagregados por departamento eran de la campaña 1997/1998. Se utilizó esta composición porcentual por departamento aplicada a un dato más reciente (2005/2006) de la Subsecretaría de Programación Económica.</p>
+
+        <p>En la provincia de Córdoba los datos del SIIA tuvieron que ser corregidos debido a que había una sobreasignación al departamento CAPITAL, CÓRDOBA. Después de consultar datos de Argenpapa resolvimos redistribuir las toneladas de papa producidas en la provincia de Córdoba en partes iguales entre los nodos de Córdoba y Villa Dolores de nuestro modelo.</p>
+
+        <p class="figure_header">
+            <strong>Figura 13:&nbsp;</strong>Flujos de transporte de papa, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura13_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashPapa?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashPapa?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <i><br />
+</i>
+        <p><i>Arroz</i>
+        </p>
+
+        <p>Se utilizaron los datos del SIIA para la campaña 2010/2011. Las exportaciones de 2010 de cada provincia se distribuyeron proporcionalmente a la producción de las ZT que componen las provincias.</p>
+
+        <p>El consumo interno, como en todos los casos de productos alimenticios, se distribuyó en forma proporcional a la población.</p>
+
+        <p class="figure_header">
+            <strong>Figura 14:&nbsp;</strong>Flujos de transporte de arroz, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura14_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashArroz?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashArroz?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <i><br />
+</i>
+        <p><i>Tabaco y cigarrillos</i>
+        </p>
+
+        <p>Los datos de producción de tabaco del SIIA están a nivel provincial y corresponden a la campaña 2009/2010. La desagregación en ZTs de nuestro modelo tuvo que realizarse en base a datos de la Administración del Fondo Especial del Tabaco de Salta y de fuentes secundarias en el caso de Misiones y Corrientes
+            <href="#_ftn19" name="_ftnref19" title="">[19]</a>. En el resto de las provincias no había más de un nodo tabacalero por lo que no hubo necesidad de adquirir otras fuentes de datos.</p>
+
+        <p>El tabaco tiene como destino principal, además de la exportación de tabaco sin elaborar, las fábricas de cigarrillos. Datos del censo económico nacional de 2004 indican que la “Elaboración de productos de tabaco” concentra casi el 57% de su actividad entre la Provincia y la Ciudad de Buenos Aires. Corrientes y Misiones tienen un 18%, Salta un 16% y Jujuy un 8%. El resto de las provincias casi no tiene producción relevante en este rubro.</p>
+
+        <p>En este caso se optó por distribuir el destino de la producción de tabaco asignando una zona de nuestro modelo por provincia basándonos en la localización de las fábricas más importantes de cigarrillos relevada del catálogo de fabricantes de cigarrillos en la Argentina de la Cigarette Pack Collectors Club of Argentina.</p>
+
+        <p>Luego se realizó una matriz OD de cigarrillos con las fábricas en el lugar de los “orígenes” y, estimándose los destinos a partir de la distribución de la población.</p>
+
+        <p class="figure_header">
+            <strong>Figura 15:&nbsp;</strong>Flujos de transporte de tabaco y cigarrillos, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura15_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashTabacoyCigarrillos?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashTabacoyCigarrillos?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <i><br />
+</i>
+        <p><i>Pera y manzana</i>
+        </p>
+
+        <p>Se optó por tratar a estos dos productos en forma conjunta debido a que los datos de exportación de OPEX-INDEC están agrupados para ambos productos y a que la estructura de orígenes y destinos, así como los volúmenes de producción involucrados, son bastante similares entre ambas frutas.</p>
+
+        <p>Los orígenes se obtuvieron a partir de datos de producción de manzanas y peras para 2004/5 (SPE – MECON) que se distribuyeron entre provincias a partir de la superficie cultivada relevada por el Censo Nacional Agropecuario 2002 de INDEC. La mayor parte de la producción de estas dos frutas se encuentra en el Alto Valle de manera que fue asignada a la zona de Neuquén (97). El resto se distribuyó hacia dentro de las provincias según la proporción de población de cada departamento dentro de su provincia.</p>
+
+        <p>Si bien éste es un criterio poco preciso ya que no hay una correlación evidente entre densidad de población y de cultivos de pera y manzana, al no disponer de un criterio superador se debió optar por esta solución. Sin embargo sólo el 22,9% de la producción fue asignada con este criterio ya que el 77,1% pertenece al Alto Valle y por lo tanto a la zona de Neuquén (97).</p>
+
+        <p>Las exportaciones se asignaron en su totalidad a la zona de San Antonio Oeste (98) en base a datos de aduana.</p>
+
+        <p class="figure_header">
+            <strong>Figura 16:&nbsp;</strong>Flujos de transporte de pera y manzana, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura16_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashManzanayPera?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashManzanayPera?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <p><i>Té</i>
+        </p>
+
+        <p>Los datos del SIIA corresponden a la producción de té en hoja verde (415.364 toneladas en la campaña 2010/2011). Según la Dirección Nacional de Alimentos el proceso al que se somete la hoja verde para producir té reduce su peso en 4.5 veces. Generalmente el proceso se hace en localizaciones muy próximas a la zona de cultivo de manera que el tonelaje a considerar para ser transportado es de 92.211 toneladas. Según datos de OPEX-INDEC 85.744 toneladas se exportaron en 2010 lo que es consistente con la Dirección Nacional de Alimentos según la cual más del 90% del té producido se exporta.</p>
+
+        <p>Aproximadamente 7 toneladas de té se transportan en un camión de manera que el factor de equivalencia empleado fue de 30/7 = 4.29.</p>
+
+        <p>La mayor parte de las exportaciones (casi 90%) son a países no limítrofes como Estados Unidos (57%), Países Bajos (4%), Alemania (3%), Reino Unido (3%) y Rusia (2%). Chile es la notable excepción que se lleva un 15% del volumen. Ante esta distribución y teniendo en cuenta que más del 80% del té se produce en la zona de Posadas se optó por asignar el transporte de te de exportación en un 85% a Buenos Aires y en un 15% a Mendoza (por el volumen que se exporta a Chile).</p>
+
+        <p class="figure_header">
+            <strong>Figura 17:&nbsp;</strong>Flujos de transporte de te, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura17_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashTe?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashTe?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <i><br />
+</i>
+        <p><i>Yerba mate</i>
+        </p>
+
+        <p>Los datos de producción corresponden a la campaña 2009/2010. Las exportaciones se destinaron a Buenos Aires en la proporción en que el destino de la exportación era Siria (71%), a Posadas en la proporción en que el destino de la exportación era Brasil (17%) y a Mendoza en la proporción en que las exportaciones eran a Chile (12%). Para calcular estas proporciones sólo se tomaron las exportaciones a Siria, Brasil y Chile por representar más del 80% de las exportaciones totales de yerba mate.</p>
+
+        <p>Al igual que en los otros casos, el consumo interno se distribuyó en forma proporcional a la población.</p>
+
+        <p class="figure_header">
+            <strong>Figura 18:&nbsp;</strong>Flujos de transporte de yerba mate, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura18_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashYerbaMate?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashYerbaMate?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <i><br />
+</i>
+        <p><i>Granos finos</i>
+        </p>
+
+        <p>Esta matriz se compone de los siguientes productos cuya información fue relevada del SIIA para la campaña 2009/2010:</p>
+
+        <ul>
+            <li>Cebada Cervecera: 1.355.801 ton (85.2%)</li>
+            <li>Avena: 181.990 ton (11.4%)</li>
+            <li>Centeno: 25.135 ton (1.6%)</li>
+            <li>Alpiste: 9.765 ton (0.6%)</li>
+            <li>Cebada Forrajera: 9.648 ton (0.6%)</li>
+            <li>Mijo: 9.115 ton (0.6%)</li>
+        </ul>
+
+        <p>Alrededor de un tercio de la producción es exportable y fue tratada en forma similar al resto de los productos agrícolas.</p>
+
+        <p class="figure_header">
+            <strong>Figura 19:&nbsp;</strong>Flujos de transporte de granos finos, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura19_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashGranosFinos?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashGranosFinos?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <i><br />
+</i>
+        <p><i>Maní</i>
+        </p>
+
+        <p>Los datos para esta matriz provienen del SIIA y corresponden a la campaña 2009/2010.</p>
+
+        <p>Las exportaciones se asignaron en su totalidad a Buenos Aires ya que en base a información de aduana sabemos que las exportaciones de maní se consolidan en Córdoba (87%) y en Buenos Aires (12%). Por el tipo de carga de que se trata, lo esperable es que se despache la totalidad por el puerto de Buenos Aires.</p>
+
+        <p class="figure_header">
+            <strong>Figura 20:&nbsp;</strong>Flujos de transporte de maní, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura20_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashMani?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashMani?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <i><br />
+</i>
+        <p><i>Poroto seco</i>
+        </p>
+
+        <p>Los datos de poroto seco provienen del SIIA para la campaña 2009/2010. Sin embargo OPEX-INDEC no ofrece los datos de exportación de este producto; en su lugar se publica que la exportación de legumbres (categoría que abarca otros productos además del poroto seco como las lentejas, garbanzos, alfalfa, etc.) en 2010 fue de poco más de 422 mil toneladas.</p>
+
+        <p>Por otro lado el SIIA no dispone de información de producción para el resto de las legumbres. Provisoriamente adoptamos entonces el dato de 260 mil toneladas de exportación de poroto seco extraído de una fuente secundaria que no pudo ser corroborada
+            <href="#_ftn20" name="_ftnref20" title="">[20]</a>.</p>
+
+        <p>Otros datos posibles (COMTRADE) ubican a la exportación de poroto seco en 321 mil toneladas pero este dato incluye otros productos además poroto seco y es demasiado próximo a la producción de 338 mil toneladas informada por el SIIA.</p>
+
+        <p class="figure_header">
+            <strong>Figura 21:&nbsp;</strong>Flujos de transporte de legumbres, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura21_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashLegumbres?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashLegumbres?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <i><br />
+</i>
+        <p><i>Cítricos</i>
+        </p>
+
+        <p>La matriz de cítricos se compone de los siguientes productos (datos de producción de 2012)
+            <href="#_ftn21" name="_ftnref21" title="">[21]</a>:</p>
+
+        <ul>
+            <li>Limón: 1.456.000 ton (50.3%)</li>
+            <li>Mandarina: 374.000 ton (12.9%)</li>
+            <li>Naranja: 934.000 ton (32.3%)</li>
+            <li>Pomelo: 132.000 ton (4.6%)</li>
+        </ul>
+
+        <p>La distribución en departamentos se hizo en base a la composición porcentual que surge de los datos del SIIA cuyo dato más actualizado en cítricos es de la campaña 1996/1997
+            <href="#_ftn22" name="_ftnref22" title="">[22]</a>.</p>
+
+        <p>La exportación se asignó por completo a Buenos Aires en base a datos de aduana.</p>
+
+        <p class="figure_header">
+            <strong>Figura 22:&nbsp;</strong>Flujos de transporte de cítricos, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura22_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashCitricos?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashCitricos?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <i><br />
+</i>
+        <p><i>Cebolla</i>
+        </p>
+
+        <p>En este caso se tomaron los datos del SIIA de la campaña 1997/1998 (la última que se muestra con desagregación por departamento) para calcular la composición porcentual con desagregación geográfica, y sobre esta se utilizó el último dato disponible de la Secretaría de Programación Económica que es de la campaña 2005/2006.</p>
+
+        <p>Se observaron fuertes discrepancias en algunos casos entre los datos del SIIA a nivel de departamento y los mismos datos a nivel de provincia. Estos no coinciden al sumar los departamentos correspondientes a cada provincia en el caso de la cebolla. En aquellos casos donde las diferencias son significativas (Córdoba, Catamarca y Tucumán), se opta por excluir la producción de esas provincias de la matriz, al carecerse de un criterio fiable para su asignación por departamento.</p>
+
+        <p class="figure_header">
+            <strong>Figura 23:&nbsp;</strong>Flujos de transporte de cebolla, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura23_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashCebolla?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashCebolla?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <i><br />
+</i>
+        <p><i>Ganado bovino</i>
+        </p>
+
+        <p>La matriz de ganado bovino se divide en tres partes: los movimientos de ganado de los campos de cría a los de invernada, los movimientos desde los campos de invernada hacia los frigoríficos y, por último, los movimientos de la carne faenada en los frigoríficos hacia el consumo interno o la exportación.</p>
+
+        <p>Los datos de carne faenada provienen del SIIA, al igual que los de todas las matrices agrícolas anteriores. Los orígenes por departamento se zonifican correspondientemente al modelo y los destinos se distribuyen proporcionalmente a la población, una vez restada la exportación.</p>
+
+        <p>A partir de datos de stock ganadero por departamento se estimaron las otras dos matrices OD según las proporciones de ganado de cría o invernada. El volumen de transporte está dado en todos los casos por los datos de carne faenada provenientes del SIIA, el stock ganadero se utiliza únicamente como ponderador para distribuir el volumen transportado entre sus orígenes.</p>
+
+        <p>El 87% de la exportación se dirige a los puertos de la zona de Buenos Aires mientras que el resto sale por las ZTs de Mendoza, San Luis, Córdoba, San Pedro y Paso de los Libres.</p>
+
+        <p class="figure_header">
+            <strong>Figura 24:&nbsp;</strong>Flujos de transporte de ganado bovino, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura24_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashGanado?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashGanado?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <i><br />
+</i>
+        <p><i>Pesca</i>
+        </p>
+
+        <p>Existen 7 zonas relevantes donde se capturan peces en distintos puertos:</p>
+
+        <ul>
+            <li>Mar del Plata (451.899 toneladas)</li>
+            <li>San Antonio Oeste (22.776 toneladas)</li>
+            <li>Maipú (10.530 toneladas)</li>
+            <li>Bahía Blanca (4.944 toneladas)</li>
+            <li>Necochea/Quequén (4.220 toneladas)</li>
+            <li>Sur
+                <a href="#_ftn23" name="_ftnref23" title="">[23]</a>(270.516 toneladas)</li>
+        </ul>
+
+        <p>La exportación es de 153.391 toneladas y según datos de aduana más de la mitad sale por puertos patagónicos (de la ZT “Sur”), un 40% se exporta por la ZT de Mar del Plata y menos de un 3% lo hace por la zona de San Antonio Oeste.</p>
+
+        <p>Al igual que en los otros casos, el consumo interno se distribuyó en forma proporcional a la población.</p>
+
+        <p class="figure_header">
+            <strong>Figura 25:&nbsp;</strong>Flujos de transporte de pesca, por origen provincial</p>
+
+        <div class="tableau_viz" id="figura25_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashPesca?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figuras13a25_ONLINE_5_Flujosagronuevos/dashPesca?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <div class="btn-group btn-group-justified">
+        <a href="parte1.html" class="btn btn-default">
+            <strong>Ir a Parte 1</strong>
+        </a>
+
+        <a href="http://www.blogdelcespa.blogspot.com.ar/#!http://blogdelcespa.blogspot.com/p/documentos-de-trabajo.html" class="btn btn-default">
+            <strong>Volver a Documentos de Trabajo</strong>
+        </a>
+
+        <a href="parte2_cont.html" class="btn btn-default">
+            <strong>Ir a Parte 2 (Continuación)</strong>
+        </a>
+    </div>
+    <!-- FIN barra de navegación al final del documento -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

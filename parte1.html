@@ -1,0 +1,448 @@
+<html>
+
+<head>
+
+     <!-- establece codificacion utf-8 y otras opciones -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- linkea con las hojas de estilo -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- linkea con la hoja de javascript  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- titulo del documento -->
+    <title>Parte 1: Modelo de la red de transporte</title>
+
+</head>
+
+<!-- cuerpo del documento -->
+
+<body>
+    <!-- barra de navegación principal -->
+    <div class="container">
+        ::before
+        <div class="bs-component">
+            <div class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <!-- Inicio dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inicio<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./index.html#">Inicio</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./index.html#_Toc392849621">Índice</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361295">Índice de figuras</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361296">Índice de tablas</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361297">Prólogo</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361298">Resumen</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Parte 1 dropdown button -->
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 1<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte1.html#">Parte 1: Modelo de la red de transporte</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte1.html#_Toc400361300">A. Modelar una red de transporte de cargas</a>
+                                </li>
+                                <li><a href="./parte1.html#_Toc400361305">B. Modelo de la red vial argentina</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 2 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 2<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte2.html#">Parte 2: Matriz origen-destino</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte2.html#_Toc400361310">A. Matriz de granos 2010</a>
+                                </li>
+                                <li><a href="./parte2.html#_Toc400361311">B. Matrices OD 2010 en base a datos de producción, consumo y comercio exterior</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 2 (bis) dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 2 (bis)<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte2_cont.html#">Parte 2 (bis): Matriz origen-destino</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte2_cont.html#_Toc400361321">C. Estudio anterior actualizado a 2010</a>
+                                </li>
+                                <li><a href="./parte2_cont.html#_Toc400361322">D. Flujos de transporte relevados</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 3 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 3<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte3.html#">Parte 3: Los tránsitos en la red vial</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte3.html#_Toc400361324">A. Rutas nacionales</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361325">B. Rutas provinciales</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361326">C. Discrepancias entre flujos viales y flujos asignados, y su tratamiento</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361327">D. Cobertura del modelo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 4 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 4<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte4.html#">Parte 4: Resultados obtenidos</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte4.html#conclusion1">Concentración de orígenes y destinos</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion2">Dominancia del sector primario</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion3">Bajas distancias recorridas</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion4">Alcance del modelo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Bibliografía normal button -->
+                        <li><a href="biblio.html">Bibliografía</a>
+                        </li>
+
+                        <!-- Anexo dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Anexo<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./anexo.html#">Anexo</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./anexo.html#_Toc400361331">A. Zonas de tráfico</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361332">B. Nodos conectivos</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361333">C. Partidos/ Departamentos por zona de tráfico</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361334">D. Extensión de la red vial nacional por provincia</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361335">E. Extensión de la red vial provincial por provincia</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361336">F. Toneladas reales y equivalentes, por producto</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361337">G. Lista de tramos de la red</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="visualizaciones.html">Visualizaciones</a>
+                        </li>
+                        <li><a href="descargas.html">Descargas</a>
+                        </li>
+                        <li><a href="http://www.blogdelcespa.blogspot.com.ar">CESPA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN barra de navegación principal -->
+
+    ::after
+
+    <!-- barra de navegación side -->
+    <ul id="sidebar" class="nav nav-pills nav-stacked">
+        <li class="panel panel-default active"><a href="#">Parte 1</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361300">A. Modelar una red de transporte de cargas</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361305">B. Modelo de la red vial argentina</a>
+        </li>
+    </ul>
+    <!-- FIN barra de navegación side -->
+
+    <div id="documento">
+        <h1 id="_Toc400361299">Parte 1: Modelo de la red de transporte</h1>
+
+        <h2 id="_Toc400361300">A. Modelar una red de transporte de cargas</h2>
+
+        <h3 id="_Toc400361301">1. El transporte como un caso de “producción conjunta”</h3>
+
+        <p>Una de las características distintivas del transporte como actividad económica es la de producir servicios distintos que, en gran medida, utilizan simultáneamente los mismos recursos. En la literatura teórica se suele denominar a estos casos como de “producción conjunta”, ya que es imposible analizar por separado la producción de distintos servicios que dependen del uso de una serie de recursos compartidos.</p>
+
+        <p>Una planta de crushing de porotos de soja es un caso de producción conjunta ya que en un mismo proceso productivo, y utilizando los mismos recursos, se producen bienes tan diferentes como aceite, glicerina, harinas proteicas, pellets y expellers de soja. En el caso del transporte sin embargo, esta caracterización es aún más relevante debido a los efectos de red que se dan cuando un determinado segmento vial es utilizado por dos servicios de transporte totalmente distintos entre sí. El proceso productivo da lugar continuamente a una multiplicidad de “productos” diferentes entre sí, que requieren sin embargo de la utilización simultánea de un mismo recurso que, además, es central para la producción de transporte.</p>
+
+        <p>Un camión de soja que va de Marcos Juárez al puerto de Rosario utiliza en parte la misma infraestructura que otro que opera de Villa María a Cañada de Gómez transportando maní, u otro de Mendoza a Nogoyá transportando vinos.</p>
+
+        <p>Valga la aclaración de que debemos definir un período de tiempo relevante para poder considerar que dos servicios utilizan “simultáneamente” un cierto tramo vial. Sin embargo, tanto si dichos servicios transitan un tramo de infraestructura vial en un mismo período (simultaneidad) como si lo hacen en períodos distintos (utilización sucesiva), existe complementariedad en el uso de la infraestructura vial, dado que el mantenimiento y amortización de ese recurso, es un costo compartido por ambos servicios.</p>
+
+        <p>En el caso del ferrocarril, además, pueden compartirse recursos de tracción ya que una locomotora puede llevar vagones con distintos orígenes, destinos y/o productos en un mismo tren.</p>
+
+        <p>El problema de la producción conjunta de servicios en el caso del transporte es por lo tanto bastante más complejo que el de la planta de crushing de porotos de soja. El análisis de costos de la generación de un viaje en camión del punto A al punto B prácticamente no puede disociarse del análisis de costos del conjunto de la red vial al estar afectando las funciones de costos de todos aquellos otros viajes que compartan en algún punto la misma infraestructura
+            <href="#_ftn4" id="_ftnref4" title="">[4]</a>.</p>
+
+        <h3 id="_Toc400361302">2. Las redes</h3>
+
+        <p>En función de lo dicho en el apartado anterior, el transporte se organiza como un servicio de “red”. Una red es “<i>un conjunto de puntos (o nodos) y líneas de interconexión que se organizan con el fin de permitir la transmisión de flujos (de mercancías, personas, información, etc.)</i>” (Rus 2003).</p>
+
+        <p>Cada nodo de la red puede ser un origen o un destino. Un recorrido que conecta dos puntos determinados atraviesa otros nodos y puede ser caracterizado como una sucesión de “tramos” que conectan nodos adyacentes entre sí. No necesariamente entre dos nodos existe un recorrido único (de hecho es improbable) ya que cuanto más compleja sea una red, existirán más alternativas posibles para llegar de un punto a otro. Existen también nodos puramente conectivos que no generan tráfico (no son orígenes -producción- ni destinos -atracción) pero que facilitan la interconexión entre los nodos generadores.</p>
+
+        <p>Las redes pueden ser extremadamente complejas. La red vial Argentina completa conecta alrededor de 4.000 localidades
+            <href="#_ftn5" id="_ftnref5" title="">[5]</a>mediante 228.410 kilómetros de caminos
+                <href="#_ftn6" id="_ftnref6" title="">[6]</a>. Más aún, existen localidades más relevantes que otras (algunas pueden superar el millón de habitantes mientras que otras pueden no alcanzarlos 100 pobladores) y existen caminos más relevantes que otros (las recorridos pavimentadas son más importantes y llevan más tráfico que las otras, las recorridos nacionales generalmente llevan más tráfico que sus alternativas provinciales).</p>
+
+        <p>Además debemos contar los miles de puntos desde los que se origina transporte de cargas que no son localidades (cada tranquera de estancia, silo de acopio o parcela industrial es un nodo generador). Esto configura entonces una red extensa, jerárquicamente organizada, que provee soporte a múltiples y diversos servicios de transporte.</p>
+
+        <p>Para analizar una red se impone entonces la necesidad de desarrollar un modelo estilizado que represente el movimiento de los flujos y las interconexiones entre los principales nodos generadores de tráfico (representados como puntos conectados por líneas), y permita obtener una clara visión de conjunto de la configuración de la red y sus principales características, sin perderse en los detalles.</p>
+
+        <h3 id="_Toc400361303">3. Zonificación</h3>
+
+        <p>En primer lugar, debe dividirse el territorio en “zonas de tráfico” (ZT). De esta manera, en vez de tratar directamente con los orígenes y destinos puntuales (que como vimos tienden a existir en número inmanejable), trataremos con las zonas como mínima unidad de análisis capaz de producir o atraer tráfico. Así, cualquier punto productor de tráfico dentro de la zona A que tenga como destino un punto <i>dentro de otra zona </i>(B por ejemplo) sumará unidades de tráfico al par origen-destino A-B.</p>
+
+        <p></p>
+
+        <table cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="figure_header">
+                            <strong>Figura 1:&nbsp;</strong>Zonificación de puntos de generación de tráfico</p>
+                        <img src="./images/figura_1.jpg">
+
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <p>En este trabajo, los pares origen-destino intrazonales (que parten de un punto de A y se dirigen hacia otro punto de A) son sólo subsidiariamente considerados como tráfico, mientras que el foco de atención está puesto sobre los pares que conectan nodos de zonas distintas.</p>
+
+        <p>La pertinencia de esta simplificación por supuesto depende de la construcción de las zonas. El tamaño adecuado de una zona depende esencialmente de dos cosas:</p>
+
+        <ul>
+            <li><b>Volumen de tráfico</b>. En principio debería buscarse que las zonas contengan volúmenes de tráfico similares (del mismo orden de magnitud).</li>
+
+            <li><b>Objetivo/precisión del análisis</b>. Si lo que se busca es analizar los flujos de transporte entre unidades productoras de granos, silos de acopio y puertos, las zonas de tráfico serán mucho más pequeñas que si el objetivo es observar los flujos de transporte entre puertos y zonas mineras.</li>
+        </ul>
+
+
+        <p>Para un estudio como este, donde se intenta ofrece un panorama general sobre toda la red de transporte, idealmente una zona no tendría más de uno o dos centros poblados importantes, mientras que el resto de las localidades deberían ser claramente secundarias. Sin embargo, esto a veces puede no ser posible o conveniente debido a una geografía complicada, a cómo estén dispuestas las interconexiones entre los nodos o más frecuentemente por limitaciones de los datos disponibles que deben incluirse en el modelo.</p>
+
+        <p>En este caso, un modelo de red de tráficos construido en base a zonas demasiado grandes con más de uno o dos centros de población importantes dentro de ellas introduciría distorsiones al mostrar tráficos pasando entre nodos muy distantes a su verdadero punto de origen o de destino. Nuevamente la precisión requerida depende del propósito del análisis. Un estudio general que busque mostrar las grandes pinceladas del problema no es sustituto de un análisis más específico a la hora de observar situaciones concretas.</p>
+
+        <p>Para cada zona debe elegirse un centroide que es aquél que representa dónde está el grueso de la generación/recepción de tráfico. Si existe un solo centro poblado de importancia la elección de este es obvia; sin embargo la cuestión puede complicarse cuando debe elegirse un centroide representativo de dos o más centros poblados de importancia (o cuando los bienes a transportar se encuentran dispersos en el territorio, como sería el caso de los cultivos).</p>
+
+        <p>Esto puede llevar a distorsionar en mayor o menor medida la representación de los flujos de transporte que involucran a los nodos de esas zonas. Veremos algunos ejemplos de este problema más adelante.</p>
+
+        <h3 id="_Toc400361304">4. Interconexión</h3>
+
+        <p>Una vez delimitadas las zonas del territorio de análisis, deben establecerse tramos conectores entre estas a través de los cuales se representarán los flujos de tráfico. El criterio para decidir que dos zonas adyacentes estén conectadas o no, responde al objetivo principal de modelizar una red de transporte que es ofrecer una visión de conjunto que capte las relaciones más significativas y haga abstracción de aquello que es menos relevante.</p>
+
+        <p>De manera que dos zonas adyacentes se consideran conectadas por un tramo si existen recorridos <i>relevantes</i> que conecten los centros poblados que conforman las zonas. En el caso extremo de dos zonas entre las cuales sólo existan unos pocos recorridos no pavimentados y en mal estado, con un volumen de tráfico insignificante, estas zonas no se consideran conectadas. Por supuesto hay casos más grises que pueden generar discusión. Es importante destacar que esta metodología ya implica una teoría acerca de cómo se deciden los viajes (y por lo tanto de qué interconexiones deben descartarse a priori, en las primeras etapas de modelación de la red).</p>
+
+        <p>El tramo se visualiza como una conexión lineal entre los centroides de dos zonas adyacentes. Generalmente, y si las zonas están bien construidas, el recorrido más relevante coincide con aquél que conecta los centroides y por lo tanto se ajusta bastante bien al tramo. Esto sin embargo no ocurre en muchas ocasiones por los mismos motivos que afectan a la delimitación de las zonas. Debe señalarse que la elección de un recorrido entre los centroides ya implica una fuerte presunción teórica (se asume que los tráficos más relevantes entre dos zonas pasan por el recorrido elegido) que a veces puede alejarse bastante de la situación real.</p>
+
+        <p>Una incorrecta zonificación podría entonces llevar a que se sobreestime la densidad de tráfico de un tramo de la red mientras se ignora la relevancia de otros. La existencia de recorridos alternativos al elegido que sean relevantes para el tráfico entre dos zonas también puede llevar a errores de estimación importantes de los tráficos de un tramo.</p>
+
+        <p>Consideremos por un momento el problema en un contexto urbano. Los puntos desde los que parten transportes de pasajeros están mucho más dispersos que en el caso del transporte interurbano. En ciudades de fuerte densidad poblacional, casi se podría hablar de un continuo de puntos de generación de tráfico. Las zonas en este caso serán mucho más pequeñas y dependerán fuertemente del objetivo del análisis (si se busca analizar los desplazamientos de usuarios del subte, la zona más grande aceptable podría ser del tamaño de una o dos cuadras). Por otro lado, el número de posibles recorridos entre una zona y otra es mucho mayor. La posibilidad de no contabilizar tráfico relevante por no elegir bien los puntos de conteo de los flujos es muy grande, al crecer el número de itinerarios razonables alternativos. El caso urbano exige una precisión mucho mayor para no perder fiabilidad en el análisis.</p>
+
+        <p>En algunos casos no existe un recorrido directo entre dos zonas o, si existe, no se puede diferenciar inequívocamente el tráfico pasante que corresponde a determinado tramo o a otro. En estos casos deben crearse nodos “conectivos” para crear tramos que coincidan más precisamente con los recorridos reales. Estos no producen ni atraen tráfico en el modelo (no pueden formar parte de pares origen-destino) sino que únicamente dan lugar a tramos dentro del recorrido de un par OD que se ajustan mejor a la situación geográfica de los recorridos reales.</p>
+
+        <p>Al construir los tramos de una red se busca entonces hacerlos coincidir aproximadamente con los recorridos reales más relevantes (en términos del tráfico que soportan). Sin embargo, generalmente hay más de un recorrido posible relevante que une dos nodos en la red vial real. Existen caminos locales, rutas secundarias, provinciales y nacionales. El transportista que quiere desplazarse del nodo A al nodo B (conectados por un “tramo” del modelo de red) elige en la práctica un recorrido basado en criterios que el investigador no conoce a priori y que pueden ser difíciles de modelar.</p>
+
+        <p>Entre estos criterios pueden estar la distancia total, la disponibilidad de estaciones de servicio, la dificultad o estado de mantenimiento del terreno, el costo de peajes y varios más. Idealmente, la identificación del recorrido real que une los dos nodos debería surgir de un modelo de costos que contemple todos estos criterios y elija el recorrido de costo mínimo.</p>
+
+        <p>La construcción de tal modelo de costos para la identificación de recorridos implica añadir sustancialmente complejidad al estudio y requiere investigación de campo para identificar y mensurar los criterios de selección de recorridos de los transportistas.</p>
+
+        <p>Para el propósito de este estudio, que es brindar un panorama general de los flujos de transporte, esto no resulta práctico. Se adoptó el criterio de elegir la recorrido de distancia mínima entre dos nodos como representación de cada tramo, lo que equivale a minimizar un modelo de costos en el que se incluya un solo parámetro (la distancia). Así, cuando se utilicen las “distancias” de los tramos en el modelo de red, estas se referirán a la distancia del recorrido real más corto posible entre los dos nodos conectados por cada tramo.</p>
+
+        <p>Esta misma observación vale para la elección de recorridos para los pares origen-destino (recorridos que ya excedan un solo tramo, utilizando una sucesión de ellos para conectar nodos que no son adyacentes). La elección de un recorrido entre dos nodos muy alejados entre sí (en términos del modelo de red, nodos que representan zonas de tráfico que no son contiguas) dependerá en la realidad de varios factores además de la distancia total. Cuando no se cuenta con mayor información sobre los recorridos utilizados y no es posible minimizar una función de costos que incluye varios criterios, lo usual es elegir el recorrido que minimice la distancia total.</p>
+
+        <b><br />
+</b>
+        <h2 id="_Toc400361305">B. Modelo de la red vial argentina</h2>
+
+        <h3 id="_Toc400361306">1. Nodos generadores de tráfico</h3>
+
+        <p>El modelo de la red vial propuesto en este estudio divide al territorio nacional en 101 zonas compuestas por grupos de departamentos (o partidos, en el caso de la provincia de Buenos Aires) (Ver
+            <href="#_Zonas_de_tráfico">Anexo A</a>y
+                <href="#_Departamentos_por_zona">Anexo C</a>). A cada zona se le asigna un centroide como nodo representativo de todos los puntos de producción o atracción de cargas que pueda haber dentro de la superficie delimitada por los departamentos que la componen
+                    <href="#_ftn7" id="_ftnref7" title="">[7]</a>.</p>
+
+        <p>La elección de cada nodo como centroide de su zona busca representar visualmente el “centro de gravedad” de la generación de tráficos del conjunto de departamentos o partidos ya que, como dijimos anteriormente, la mayor parte de los puntos de producción o atracción de tráficos están próximos al mismo.</p>
+
+        <p>Por ejemplo la zona número 22 del modelo es la ciudad de San Nicolás en la provincia de Buenos Aires. San Nicolás es el centroide de una zona compuesta por los partidos de San Nicolás y Ramallo (ambos de la provincia de Buenos Aires) con una población de 133.602 habitantes
+            <href="#_ftn8" id="_ftnref8" title="">[8]</a>. Esto es casi tres cuartos de la población total de los dos partidos (178.899 habitantes).</p>
+
+        <p class="figure_header">
+            <strong>Figura 2:&nbsp;</strong>Zona de tráfico y su nodo centroide</p>
+
+        <div class="cartodb_viz" id="figura2_grafico">
+            <iframe width='100%' height='520' frameborder='0' src='http://cespa.cartodb.com/viz/521ac0ec-1432-11e4-bbb8-0e10bcd91c2b/embed_map?title=false&description=false&search=false&shareable=true&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=true&fullscreen=false&sublayer_options=1|1|1|1&sql=&sw_lat=-33.7419505443251&sw_lon=-60.90344945068364&ne_lat=-33.2857923056821&ne_lon=-59.34064427490239' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+        </div>
+
+        <p></p>
+
+        <p>Así, la matriz de orígenes y destinos registra a todos aquellos tráficos generados o recibidos en los departamentos de San Nicolás o Ramallo como pertenecientes a la ciudad de San Nicolás.</p>
+
+        <p>Como generalmente no se dispone de información detallada acerca de los puntos de origen y destino de las cargas transportadas en una red, la delimitación de las zonas tiende a tener un criterio más bien pragmático basado en la disponibilidad de datos (principalmente en su nivel de desagregación geográfica). En el caso de disponer de una encuesta o censo de tráficos, se cuenta con información sobre puntos específicos de origen y destino; la delimitación de las zonas podría responder, en parte, a criterios de confiabilidad en el tratamiento estadístico basados en los resultados o las características de la encuesta.</p>
+
+        <p>En este caso, gran parte de la información relevada para realizar este estudio se encuentra a nivel de departamento o partido (disponiendo raras veces de una desagregación mayor –por ejemplo a nivel de localidad- y debiendo lidiar otras veces con niveles de desagregación aún menores –provincial) de manera que las zonas están construidas como grupos de departamentos y nunca abarcan fracciones de estos (si bien sí hay zonas cuya superficie se extiende sobre más de una provincia).</p>
+
+        <h3 id="_Toc400361307">2. Tramos conectores</h3>
+
+        <p>Teniendo delimitadas las zonas y asignado un centroide a cada una de ellas, deben crearse tramos que conecten pares de nodos de zonas adyacentes a los cuales se asignará el tráfico que haya entre las mismas. Nuevamente los tramos buscan representar simplificadamente los sectores más relevantes de la red vial real de la Argentina, en términos del tráfico que soportan. Esto incluye a la casi totalidad de las rutas nacionales y a algunas rutas provinciales.</p>
+
+        <p>La distancia asignada a cada tramo corresponde a la del recorrido más corto entre los nodos. En este caso fue tomada realizando consultas a la aplicación web de Google Maps, ocasionalmente corregidas cuando algún recorrido importante estaba ausente en la aplicación. La dispersión es bastante alta, siendo el tramo más corto de 22 km (San Antonio de Areco a San Andrés de Giles) y el más largo de 590 km (Neuquén a Ingeniero Jacobacci); la media es de unos 154 km.</p>
+
+        <p>Cómo dijimos, en algunos casos es necesario crear tramos adicionales para aproximarse mejor a la realidad geográfica de los recorridos que conectan dos nodos generadores. Para estos casos se han creado 20 nodos “conectivos” (en verde en el mapa y de código mayor a 1000).</p>
+
+        <p></p>
+
+        <p class="figure_header">
+            <strong>Figura 3:&nbsp;</strong>Tramos conectores de zonas de tráfico</p>
+
+        <div class="cartodb_viz" id="figura3_grafico">
+            <iframe width='100%' height='520' frameborder='0' src='http://cespa.cartodb.com/viz/521ac0ec-1432-11e4-bbb8-0e10bcd91c2b/embed_map?title=false&description=false&search=false&shareable=true&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=true&fullscreen=false&sublayer_options=1%7C1%7C1%7C1&sql=&sw_lat=-33.84859800440476&sw_lon=-61.4122537719727&ne_lat=-33.27872857424049&ne_lon=-59.84944859619145' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+        </div>
+
+
+        <p>Por ejemplo el tramo entre San Nicolás y Pergamino (zonas 22 y 24 de nuestro modelo) se corresponde con la recorrido nacional 188 y representa el tráfico existente entre los departamentos de Colón, Rojas y Pergamino (zona de Pergamino), y los de San Nicolás y Ramallo (zona de San Nicolás).</p>
+
+        <p>Un transporte de cargas que se origine en Villa Ramallo y tenga como destino la ciudad de Colón (marcados en rojo – ver mapa) figuraría en la red como carga pasante por el tramo 22-24 (San Nicolás-Pergamino).</p>
+
+        <p>Las 101 zonas generadoras del modelo más los 20 nodos conectivos se conectan entre sí a través de 214 tramos (Ver
+            <href="#_Lista_de_tramos">Anexo G</a>). En promedio, una zona tiene asignados unos 3,5 tramos por los que entra o sale carga de la misma, mientras que los nodos menos conectados pueden tener un solo tramo (por ejemplo Andalgalá sólo se conecta con La Rioja) y los nodos más conectados pueden tener hasta 7 (como es el caso de Buenos Aires y Rosario).</p>
+
+        <p>Por ejemplo en el camino de Trenque Lauquen a General Villegas el tráfico pasa por la ruta nacional 33 pero a partir de Rivadavia también hay tráfico proveniente de General Pico que va hacia Gral. Villegas. Si esta situación no se tuviera en cuenta y en lugar del nodo conectivo en Rivadavia se creara un tramo directamente entre Villegas y General Pico, sería más complicado asignar correctamente el tráfico a cada tramo ya que habría una superposición entre Rivadavia y Villegas.</p>
+
+        <p class="figure_header">
+            <strong>Figura 4:&nbsp;</strong>Nodos conectivos</p>
+        <div class="cartodb_viz" id="figura4_grafico">
+            <iframe width='100%' height='520' frameborder='0' src='http://cespa.cartodb.com/viz/521ac0ec-1432-11e4-bbb8-0e10bcd91c2b/embed_map?title=false&description=false&search=false&shareable=true&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=true&fullscreen=false&sublayer_options=1%7C1%7C1%7C1&sql=&sw_lat=-35.944512991205166&sw_lon=-64.49117222900395&ne_lat=-34.8294382165661&ne_lon=-61.36556187744145' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+        </div>
+
+        <p></p>
+
+        <p>Por supuesto un tramo no necesariamente coincide con una sola ruta ya que representa la conexión entre dos superficies (las zonas) y no sólo entre dos puntos (los nodos centroides). Alrededor de 20 tramos en el modelo representan el tráfico de más de una ruta.</p>
+
+        <p>Un caso evidente (y casi trivial) de tramo con más de una ruta asociada es Rosario-Cañada de Gómez donde se debe contar la traza vieja de la ruta 9 y la traza nueva de la autopista (en este caso sin embargo ambas conectan las mismas localidades ya que corren en paralelo).</p>
+
+        <p class="figure_header">
+            <strong>Figura 5:&nbsp;</strong>Tramos con múltiples rutas asociadas</p>
+        <div class="cartodb_viz" id="figura5_grafico">
+            <iframe width='100%' height='520' frameborder='0' src='http://cespa.cartodb.com/viz/521ac0ec-1432-11e4-bbb8-0e10bcd91c2b/embed_map?title=false&description=false&search=false&shareable=true&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=true&fullscreen=false&sublayer_options=1%7C1%7C1%7C1&sql=&sw_lat=-33.141424491667415&sw_lon=-61.814628039550826&ne_lat=-32.56691683235634&ne_lon=-60.251822863769576' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+        </div>
+        <p></p>
+
+        <p>Un caso mucho más complejo de tratar es el que comprende zonas de gran porte, con multiplicidad de rutas relevantes que las conectan. Lo ejemplificamos con las zonas de tráfico de Laboulaye, Villa María y Bell Ville.</p>
+
+        <p>Cualquier punto de origen en la ZT
+            <href="#_ftn9" id="_ftnref9" title="">[9]</a>de Laboulaye que tenga como destino alguna localidad del sur de la zona de Bell Ville debería tomar todo un rodeo desde Laboulaye a través de Vicuña Mackenna, Río Cuarto y Villa María hasta llegar a Bell Ville porque esos son los tramos que conectan el centroide de Laboulaye con el centroide de Bell Ville.</p>
+
+        <p>Sin embargo en este caso quedarían también atrapados todos los tráficos del departamento de Juarez Celman (a donde pertenece la localidad de La Carlota) a pesar de que resulta evidente que cualquier tráfico que se origine en este departamento con destino a alguna localidad del sur de los departamentos de Unión y Marcos Juárez (pertenecientes a la zona de Bell Ville) se desplazarían por la ruta nacional 8 que corresponde al tramo de La Carlota-Canals.</p>
+
+        <p class="figure_header">
+            <strong>Figura 6:&nbsp;</strong>Zonas de tráfico con problemas de delimitación</p>
+        <div class="cartodb_viz" id="figura6_grafico">
+            <iframe width='100%' height='520' frameborder='0' src='http://cespa.cartodb.com/viz/521ac0ec-1432-11e4-bbb8-0e10bcd91c2b/embed_map?title=false&description=false&search=false&shareable=true&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=true&fullscreen=false&sublayer_options=1%7C1%7C1%7C1&sql=&sw_lat=-34.23493055531774&sw_lon=-65.91939488525395&ne_lat=-31.94326921045888&ne_lon=-59.66817418212895' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+        </div>
+        <p></p>
+
+        <p>De igual manera cualquier tráfico que se origine en el sur de la zona con destino a la ZT Villa María aparece en el modelo transitando el corto tramo entre Bell Ville y Villa María por la ruta nacional 9 cuando en realidad debería seguir los tramos que conectan a Canals, La Carlota, Río Cuarto y finalmente Villa María.</p>
+
+        <p>Estos errores se deben principalmente a que la zona de Bell Ville está compuesta por dos departamentos de excesiva extensión norte-sur dentro de los que se incluyen dos rutas nacionales importantes muy separadas entre sí. Idealmente el sur de la ZT Bell Ville debería ser una zona distinta pero, al no contar con información más que a nivel de departamento, no puede crearse una zona con fracciones de Unión y Marcos Juárez.</p>
+
+        <p>Por su parte, el departamento de Juarez Celman probablemente debería ser una zona en sí mismo, pero esto no se justifica ya que no hay ningún nodo importante que pueda actuar de centroide. Toda generación de tráfico en el departamento debe estar muy dispersa y además no es demasiado relevante. La construcción de una ZT en esa situación añadiría complejidad al modelo y crearía más problemas de los que resolvería.</p>
+
+        <p>La solución ad-hoc que se adoptó para este caso infrecuente dentro del modelo fue asignar algún tráfico de las ZT Villa María, Bell Ville y Laboulaye a los nodos conectivos de La Carlota y Canals en forma excepcional. Este caso es seguramente el ejemplo más extremo de las distorsiones a las que está expuesto el modelo de zonificación adoptado.
+            <href="#_ftn10" id="_ftnref10" title="">[10]</a>
+        </p>
+
+        <p>A continuación se muestra el mapa de la red vial modelada.</p>
+
+        <p class="figure_header">
+            <strong>Figura 7:&nbsp;</strong>Red vial</p>
+
+        <div class="tableau_viz" id="figura7_grafico">
+            <iframe load-viz-resize="" frameborder='0' class="tb-viz ng-scope" ng-src="https://public.tableausoftware.com/views/Figura7_ONLINE_Modelodelaredvial/dash?:embed=y&amp;:showVizHome=no&amp;:showTabs=y" src="https://public.tableausoftware.com/views/Figura7_ONLINE_Modelodelaredvial/dash?:embed=y&amp;:showVizHome=no&amp;:showTabs=y"></iframe>
+        </div>
+
+        <p></p>
+
+        <h3 id="_Toc400361308">3. Recorridos entre pares de nodos</h3>
+
+        <p>Los 101 nodos generadores, más los 20 nodos conectivos y los 214 tramos que conectan entre sí a los 121 nodos configuran el modelo de la red vial argentina. Idealmente, si se dispusiera de una encuesta de cargas completa y actualizada, cada par origen-destino de la encuesta se asociaría a sus correspondientes zonas de tráfico en el modelo y el recorrido seleccionado debería ser uno que pase por el punto donde se realizó la encuesta.
+            <href="#_ftn11" id="_ftnref11" title="">[11]</a>
+        </p>
+
+        <p>Sin embargo la mayor parte de la información con que se cuenta para este estudio no ofrece datos acerca del recorrido de las cargas, de manera que este debió ser construido teóricamente para cada par origen-destino posible.</p>
+
+        <p>Para esto se construyó el grafo (conjunto de vértices o nodos unidos por líneas) del modelo y se corrió un algoritmo de caminos mínimos para todos los pares origen-destino posibles (101 x 101 pares). Como el criterio se basó exclusivamente en la distancia mínima y sin importar el sentido de la carga, el número de recorridos posibles relevantes es de:</p>
+
+        <p>Por supuesto la mayoría de los 5.050 recorridos son escasamente relevantes dado que vinculan pares OD que no tienen tráfico en la matriz origen-destino. Sólo 2.457 de estos pares OD posibles registran algún tráfico en la misma.
+            <href="#_ftn12" id="_ftnref12" title="">[12]</a>
+        </p>
+
+        <p>En algunos casos, utilizar la distancia mínima como criterio para construir el recorrido de un par OD no es muy adecuado debido a que existen otras consideraciones adicionales a las que se enfrenta el operador de cargas (autopistas, peajes, estado de la ruta, paradores, servicios auxiliares, pendiente, dificultad, etc.) que pueden a veces pesar más que la distancia como criterio decisivo para elegir un recorrido. Un total de 34 recorridos fueron revisados manualmente reemplazando a los originados por el algoritmo, en función de características propias de los recorridos. Sin embargo debemos esperar que el modelo tenga algún sesgo que genera una distancia media del sistema menor a la real.</p>
+
+        <p>En este modelo, un par origen-destino siempre utiliza el mismo recorrido independientemente del tipo de carga que se transporte o de que se invierta el sentido de circulación de la carga.</p>
+
+        <b><br />
+</b>
+
+    </div>
+
+    <br>
+    <br>
+    <div class="btn-group btn-group-justified">
+        <a href="index.html" class="btn btn-default">
+            <strong>Ir al Inicio</strong>
+        </a>
+
+        <a href="http://www.blogdelcespa.blogspot.com.ar/#!http://blogdelcespa.blogspot.com/p/documentos-de-trabajo.html" class="btn btn-default">
+            <strong>Volver a Documentos de Trabajo</strong>
+        </a>
+
+        <a href="parte2.html" class="btn btn-default">
+            <strong>Ir a Parte 2</strong>
+        </a>
+    </div>
+    <!-- FIN barra de navegación al final del documento -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

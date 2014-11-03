@@ -1,0 +1,692 @@
+<html>
+
+<head>
+
+    <!-- establece codificacion utf-8 y otras opciones -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- linkea con las hojas de estilo -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <!-- linkea con la hoja de javascript  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- titulo del documento -->
+    <title>Transporte Automotor de Cargas en Argentina: una Estimación de Orígenes y Destinos - 2010</title>
+
+</head>
+
+<!-- cuerpo del documento -->
+
+<body>
+
+    <!-- barra de navegación principal -->
+    <div class="container">
+        ::before
+        <div class="bs-component">
+            <div class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+
+                        <!-- Inicio dropdown button -->
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inicio<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./index.html#">Inicio</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./index.html#_Toc392849621">Índice</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361295">Índice de figuras</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361296">Índice de tablas</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361297">Prólogo</a>
+                                </li>
+                                <li><a href="./index.html#_Toc400361298">Resumen</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Parte 1 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 1<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte1.html#">Parte 1: Modelo de la red de transporte</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte1.html#_Toc400361300">A. Modelar una red de transporte de cargas</a>
+                                </li>
+                                <li><a href="./parte1.html#_Toc400361305">B. Modelo de la red vial argentina</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 2 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 2<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte2.html#">Parte 2: Matriz origen-destino</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte2.html#_Toc400361310">A. Matriz de granos 2010</a>
+                                </li>
+                                <li><a href="./parte2.html#_Toc400361311">B. Matrices OD 2010 en base a datos de producción, consumo y comercio exterior</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 2 (bis) dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 2 (bis)<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte2_cont.html#">Parte 2 (bis): Matriz origen-destino</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte2_cont.html#_Toc400361321">C. Estudio anterior actualizado a 2010</a>
+                                </li>
+                                <li><a href="./parte2_cont.html#_Toc400361322">D. Flujos de transporte relevados</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 3 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 3<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte3.html#">Parte 3: Los tránsitos en la red vial</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte3.html#_Toc400361324">A. Rutas nacionales</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361325">B. Rutas provinciales</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361326">C. Discrepancias entre flujos viales y flujos asignados, y su tratamiento</a>
+                                </li>
+                                <li><a href="./parte3.html#_Toc400361327">D. Cobertura del modelo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Parte 4 dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Parte 4<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./parte4.html#">Parte 4: Resultados obtenidos</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./parte4.html#conclusion1">Concentración de orígenes y destinos</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion2">Dominancia del sector primario</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion3">Bajas distancias recorridas</a>
+                                </li>
+                                <li><a href="./parte4.html#conclusion4">Alcance del modelo</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Bibliografía normal button -->
+                        <li><a href="biblio.html">Bibliografía</a>
+                        </li>
+
+                        <!-- Anexo dropdown button -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Anexo<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./anexo.html#">Anexo</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="./anexo.html#_Toc400361331">A. Zonas de tráfico</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361332">B. Nodos conectivos</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361333">C. Partidos/ Departamentos por zona de tráfico</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361334">D. Extensión de la red vial nacional por provincia</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361335">E. Extensión de la red vial provincial por provincia</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361336">F. Toneladas reales y equivalentes, por producto</a>
+                                </li>
+                                <li><a href="./anexo.html#_Toc400361337">G. Lista de tramos de la red</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="visualizaciones.html">Visualizaciones</a>
+                        </li>
+                        <li><a href="descargas.html">Descargas</a>
+                        </li>
+                        <li><a href="http://www.blogdelcespa.blogspot.com.ar">CESPA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN barra de navegación principal -->
+
+    ::after
+
+    <!-- barra de navegación side -->
+    <ul id="sidebar" class="nav nav-pills nav-stacked">
+        <li class="panel panel-default active"><a href="#">Inicio</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc392849621">Índice</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361295">Índice de figuras</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361296">Índice de tablas</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361297">Prólogo</a>
+        </li>
+        <li class="panel panel-default"><a href="#_Toc400361298">Resumen</a>
+        </li>
+    </ul>
+    <!-- FIN barra de navegación side -->
+
+    <!-- comienzo del documento -->
+    <div id="documento">
+
+        <p id="titulo">Transporte Automotor de Cargas en Argentina: una Estimación de Orígenes y Destinos - 2010</p>
+        <br>
+        <br>
+        <br>
+        <div id="logo_cespa">
+            <img src="./images/logo_cespa.png" alt="">
+        </div>
+        <div id="logo_fce">
+            <img id="logo_fce" src="./images/logo_fce.jpg" alt="">
+        </div>
+
+        <div id="autoria">
+            <p id="autores"><b>Alberto Müller y Agustín Benassi</b>
+            </p>
+            <p id="institucion">
+                <b>CESPA – FCE – UBA<br /></b>
+            </p>
+            <p id="issn">
+                <b>ISSN 1853-7073<br /></b>
+            </p>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+        <p id="nro_dt"><b>Documento de Trabajo Nro. 37</b>
+        </p>
+
+        <p id="fecha"><b>Octubre 2014</b>
+        </p>
+
+        <br>
+        <br>
+        <br>
+
+        <p class="datos_contacto">Av. Córdoba 2122</p>
+
+        <p class="datos_contacto">2do. Piso, Departamentos Pedagógicos</p>
+
+        <p class="datos_contacto">(C 1120 AAQ) Ciudad de Buenos Aires</p>
+
+        <p class="datos_contacto">Tel.: 54-11-4370-6183 – E-mail: dircespa@econ.uba.ar</p>
+
+        <p class="datos_contacto"><a href="http://home.econ.uba.ar/economicas/cespa">http://home.econ.uba.ar/economicas/cespa</a>
+        </p>
+
+        <p class="datos_contacto"><a href="http://www.blogdelcespa.blogspot.com/">www.blogdelcespa.blogspot.com</a>
+            <br />
+        </p>
+
+
+
+        <br>
+        <br>
+        <h1 id="_Toc392849621">Índice</h1>
+
+        <p id="seccion_clickeable">Hacer click en los elementos del índice para ir a la sección correspondiente</p>
+
+
+        <div class="list-group">
+
+            <ul>
+                <a href="#_Toc400361295" class="list-group-item">Índice de figuras</a>
+                <a href="#_Toc400361296" class="list-group-item">Índice de tablas</a>
+                <a href="#_Toc400361297" class="list-group-item">Prólogo</a>
+                <a href="#_Toc400361298" class="list-group-item">Resumen</a>
+                <a href="./parte1.html#_Toc400361299" class="list-group-item">Parte 1: Modelo de la red de transporte</a>
+                <ul>
+                    <a href="./parte1.html#_Toc400361300" class="list-group-item">A. Modelar una red de transporte de carga</a>
+                    <ul>
+                        <a href="./parte1.html#_Toc400361301" class="list-group-item">1. El transporte como un caso de “producción conjunta”</a>
+                        <a href="./parte1.html#_Toc400361302" class="list-group-item">2. Las redes</a>
+                        <a href="./parte1.html#_Toc400361303" class="list-group-item">3. Zonificación</a>
+                        <a href="./parte1.html#_Toc400361304" class="list-group-item">4. Interconexión</a>
+                    </ul>
+                    <a href="./parte1.html#_Toc400361305" class="list-group-item">B. Modelo de la red vial argentina</a>
+                    <ul>
+                        <a href="./parte1.html#_Toc400361306" class="list-group-item">1. Nodos generadores de tráfico</a>
+                        <a href="./parte1.html#_Toc400361307" class="list-group-item">2. Tramos conectores</a>
+                        <a href="./parte1.html#_Toc400361308" class="list-group-item">3. Recorridos entre pares de nodos</a>
+                    </ul>
+                </ul>
+                <a href="./parte2.html#head_parte2" class="list-group-item">Parte 2: Matriz origen-destino</a>
+                <ul>
+                    <a href="./parte2.html#_Toc400361310" class="list-group-item">A. Matriz de granos 2010</a>
+                    <a href="./parte2.html#_Toc400361311" class="list-group-item">B. Matrices OD 2010 en base a datos de producción, consumo y comercio exterior</a>
+                    <ul>
+                        <a href="./parte2.html#_Toc400361312" class="list-group-item">1. Metodología</a>
+                        <a href="./parte2.html#_Toc400361313" class="list-group-item">2. Agricultura, pesca, ganadería y derivados</a>
+                        <a href="./parte2_cont.html#_Toc400361314" class="list-group-item">3. Vinos</a>
+                        <a href="./parte2_cont.html#_Toc400361315" class="list-group-item">4. Lácteos</a>
+                        <a href="./parte2_cont.html#_Toc400361316" class="list-group-item">5. Cemento</a>
+                        <a href="./parte2_cont.html#_Toc400361317" class="list-group-item">6. Acero</a>
+                        <a href="./parte2_cont.html#_Toc400361318" class="list-group-item">7. Automotores</a>
+                        <a href="./parte2_cont.html#_Toc400361319" class="list-group-item">8. Combustibles</a>
+                        <a href="./parte2_cont.html#_Toc400361320" class="list-group-item">9. Química y petroquímica</a>
+                    </ul>
+                    <a href="./parte2_cont.html#_Toc400361321" class="list-group-item">C. Estudio anterior actualizado a 2010</a>
+                    <a href="./parte2_cont.html#_Toc400361322" class="list-group-item">D. Flujos de transporte relevados</a>
+                </ul>
+                <a href="./parte3.html#_Toc400361323" class="list-group-item">Parte 3: Los tránsitos en la red vial</a>
+                <ul>
+                    <a href="./parte3.html#_Toc400361324" class="list-group-item">A. Rutas nacionales</a>
+                    <a href="./parte3.html#_Toc400361325" class="list-group-item">B. Rutas provinciales</a>
+                    <a href="./parte3.html#_Toc400361326" class="list-group-item">C. Discrepancias entre flujos viales y flujos asignados, y su tratamiento</a>
+                    <a href="./parte3.html#_Toc400361327" class="list-group-item">D. Cobertura del modelo</a>
+                </ul>
+                <a href="./parte4.html#_Toc400361328" class="list-group-item">Parte 4: Resultados obtenidos</a>
+                <ul>
+                    <a href="./parte4.html#conclusion1" class="list-group-item">Concentración de orígenes y destinos</a>
+                    <a href="./parte4.html#conclusion2" class="list-group-item">Dominancia del sector primario</a>
+                    <a href="./parte4.html#conclusion3" class="list-group-item">Bajas distancias recorridas</a>
+                    <a href="./parte4.html#conclusion4" class="list-group-item">Alcance del modelo</a>
+                </ul>
+
+                <a href="./biblio.html#_Toc400361329" class="list-group-item">Bibliografía y fuentes</a>
+                <a href="./anexo.html#_Toc400361330" class="list-group-item">Anexos</a>
+                <ul>
+                    <a href="./anexo.html#_Toc400361331" class="list-group-item">A. Zonas de tráfico</a>
+                    <a href="./anexo.html#_Toc400361332" class="list-group-item">B. Nodos conectivos</a>
+                    <a href="./anexo.html#_Toc400361333" class="list-group-item">C. Partidos/Departamentos por zona de tráfico</a>
+                    <a href="./anexo.html#_Toc400361334" class="list-group-item">D. Extensión de la red vial nacional por provincia</a>
+                    <a href="./anexo.html#_Toc400361335" class="list-group-item">E. Extensión de la red vial provincial por provincia</a>
+                    <a href="./anexo.html#_Toc400361336" class="list-group-item">F. Toneladas reales y equivalentes, por producto</a>
+                    <a href="./anexo.html#_Toc400361337" class="list-group-item">G. Lista de tramos de la red</a>
+                </ul>
+            </ul>
+
+
+        </div>
+        <br>
+        <br>
+        <h1 id="_Toc400361295">Índice de figuras</h1>
+        <p>
+            <a href="./parte1.html#figura1_grafico">Figura 1: Zonificación de puntos de generación de tráfico</a>
+        </p>
+
+        <p>
+            <a href="./parte1.html#figura2_grafico">Figura 2: Zona de tráfico y su nodo centroide</a>
+        </p>
+
+        <p>
+            <a href="./parte1.html#figura3_grafico">Figura 3: Tramos conectores de zonas de tráfico</a>
+        </p>
+
+        <p>
+            <a href="./parte1.html#figura4_grafico">Figura 4: Nodos conectivos</a>
+        </p>
+
+        <p>
+            <a href="./parte1.html#figura5_grafico">Figura 5: Tramos con múltiples rutas asociadas</a>
+        </p>
+
+        <p>
+            <a href="./parte1.html#figura6_grafico">Figura 6: Zonas de tráfico con problemas de delimitación</a>
+        </p>
+
+        <p>
+            <a href="./parte1.html#figura7_grafico">Figura 7: Red vial</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura8_grafico">Figura 8: Flujos de transporte de soja, por destino</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura9_grafico">Figura 9: Flujos de transporte de maíz, por destino</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura10_grafico">Figura 10: Flujos de transporte de trigo, por destino</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura11_grafico">Figura 11: Flujos de transporte de girasol y sorgo, por destino</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura12_grafico">Figura 12: Flujos de transporte de aceites y subproductos, por destino</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura13_grafico">Figura 13: Flujos de transporte de papa, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura14_grafico">Figura 14: Flujos de transporte de arroz, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura15_grafico">Figura 15: Flujos de transporte de tabaco y cigarrillos, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura16_grafico">Figura 16: Flujos de transporte de pera y manzana, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura17_grafico">Figura 17: Flujos de transporte de te, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura18_grafico">Figura 18: Flujos de transporte de yerba mate, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura19_grafico">Figura 19: Flujos de transporte de granos finos, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura20_grafico">Figura 20: Flujos de transporte de maní, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura21_grafico">Figura 21: Flujos de transporte de legumbres, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura22_grafico">Figura 22: Flujos de transporte de cítricos, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura23_grafico">Figura 23: Flujos de transporte de cebolla, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura24_grafico">Figura 24: Flujos de transporte de ganado bovino, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#figura25_grafico">Figura 25: Flujos de transporte de pesca, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#figura26_grafico">Figura 26: Flujos de transporte de vinos, por origen</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#figura27_grafico">Figura 27: Flujos de transporte de productos lácteos, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#figura28_grafico">Figura 28: Flujos de transporte de cemento, por origen</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#figura29_grafico">Figura 29: Flujos de transporte de productos de acero para terceros y para el propio sector, por orígenes</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#figura30_grafico">Figura 30: Relación entre parque automotor provincial per cápita y PBI per cápita</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#figura31_grafico">Figura 31: Flujos de transporte de cargas de automotores</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#figura32_grafico">Figura 32: Flujos de transporte de combustibles, por origen</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#figura33_grafico">Figura 33: Flujos de transporte de fertilizantes, por origen</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#figura34_grafico">Figura 34: Flujos de transporte de productos tomados del estudio anterior, por destino provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#figura35_grafico">Figura 35: Flujos de transporte totales sobre la red vial</a>
+        </p>
+
+        <p>
+            <a href="./parte3.html#figura36_grafico">Figura 36: Asociación de tramos de rutas reales a un tramo del modelo</a>
+        </p>
+
+        <p>
+            <a href="./parte3.html#figura37_grafico">Figura 37: Flujos de transporte sobre la red vial nacional a partir de datos de tránsito de la DNV</a>
+        </p>
+
+        <p>
+            <a href="./parte3.html#figura38_grafico">Figura 38: Flujos de transporte sobre la red vial provincial de la provincia de Buenos Aires a partir de datos de tránsito</a>
+        </p>
+
+        <p>
+            <a href="./parte3.html#figura39_grafico">Figura 39: Flujos de transporte sobre la red vial nacional y la red vial provincial de la provincia de Buenos Aires a partir de datos de tránsito</a>
+        </p>
+
+        <p>
+            <a href="./parte3.html#figura40_grafico">Figura 40: Discrepancias entre los flujos de tránsito relevados y los estimados a partir de datos de tránsito (DNV+PBA)</a>
+        </p>
+
+        <p>
+            <a href="./parte3.html#figura41_grafico">Figura 41: Toneladas de “pares OD implícitos”, por origen provincial (millones de toneladas equivalentes)</a>
+        </p>
+
+        <p>
+            <a href="./parte4.html#figura42_grafico">Figura 42: Toneladas transportadas, por origen o destino provincial (millones de toneladas equivalentes)</a>
+        </p>
+
+        <p>
+            <a href="./parte4.html#figura43_grafico">Figura 43: Matriz origen-destino entre los 4 principales distritos generadores de tráfico (agregados) y el resto</a>
+        </p>
+
+        <p>
+            <a href="./parte4.html#figura44_grafico">Figura 44: Matriz origen-destino entre los 4 principales distritos generadores de tráfico (desagregados) y el resto</a>
+        </p>
+
+        <p>
+            <a href="./parte4.html#figura45_grafico">Figura 45: Matriz origen-destino entre los 4 principales distritos generadores de tráfico (desagregados) y el resto, excluidos los tráficos intraprovinciales</a>
+        </p>
+
+        <p>
+            <a href="./parte4.html#figura46_grafico">Figura 46: Composición de las cargas generadas, por rubro</a>
+        </p>
+
+        <p>
+            <a href="./parte4.html#figura47_grafico">Figura 47: Histograma de volúmenes de cargas transportados según distancia recorrida, por rangos de 100km</a>
+        </p>
+
+        <p>
+            <a href="./parte4.html#figura48_grafico">Figura 48: Composición de las cargas según distancia media, por rubro (millones de toneladas equivalentes)</a>
+        </p>
+
+        <p>
+            <a href="./parte4.html#figura49_grafico">Figura 49: Productos agrícolas y forestales transportados a más de 800 km, por origen provincial (millones de toneladas)</a>
+        </p>
+
+        <p>
+            <a href="./parte4.html#figura50_grafico">Figura 50: Incidencia de las cargas no relevadas, por segmento de distancia</a>
+        </p>
+        <br>
+        <br>
+        <h1 id="_Toc400361296">Índice de tablas</h1>
+
+        <p>
+            <a href="./parte2.html#tabla1_tabla">Tabla 1: Principales fuentes de la matriz origen-destino</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#tabla2_tabla">Tabla 2: Productos provenientes de la matriz origen-destino de granos</a>
+        </p>
+
+        <p>
+            <a href="./parte2.html#tabla3_tabla">Tabla 3: Productos agropecuarios y derivados, en base a datos de producción, consumo y comercio exterior</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla4_tabla">Tabla 4: Cantidades de vino transportadas, por modalidad de envío</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla5_tabla">Tabla 5: Cantidades de productos lácteos transportados</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla6_tabla">Tabla 6: Productos lácteos transportados, por origen provincial</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla7_tabla">Tabla 7: Proporción de litros de leche fluida procesados por cuenca en la provincia de Buenos Aires</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla8_tabla">Tabla 8: Firmas productoras de automotores</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla9_tabla">Tabla 9: Factores de equivalencia, por firma</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla10_tabla">Tabla 10: Elasticidad del parque automotor per cápita al PBI per cápita</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla11_tabla">Tabla 11: Producción e importación de automotores, por origen</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla12_tabla">Tabla 12: Cantidades de combustibles transportados, por tipo de combustible</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla13_tabla">Tabla 13: Orígenes de la producción de combustibles, por refinería</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla14_tabla">Tabla 14: Destinos de la producción e importación de combustibles, por tipo de destino</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla15_tabla">Tabla 15: Ajuste del cálculo de consumo de combustible por discrepancias en orígenes y destinos, por tipo de combustible</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla16_tabla">Tabla 16: Productos de química y petroquímica transportados</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla17_tabla">Tabla 17: Productos provenientes del estudio anterior actualizado a 2010</a>
+        </p>
+
+        <p>
+            <a href="./parte2_cont.html#tabla18_tabla">Tabla 18: Parámetros de la matriz origen-destino de cargas relevadas, según tipo de tráfico</a>
+        </p>
+
+        <p>
+            <a href="./parte3.html#tabla19_tabla">Tabla 19: Nivel de cobertura de los datos de composición de tráfico para la red vial nacional, respecto del total de tramos según la clasificación de la DNV</a>
+        </p>
+
+        <p>
+            <a href="./parte3.html#tabla20_tabla">Tabla 20: Nivel de cobertura de los datos de composición de tráfico para la red vial nacional, respecto del total de rutas nacionales</a>
+        </p>
+
+        <p>
+            <a href="./parte3.html#tabla21_tabla">Tabla 21: Principales parámetros de matrices origen-destino posibles para los “pares OD implícitos”</a>
+        </p>
+
+        <p>
+            <a href="./parte3.html#tabla22_tabla">Tabla 22: Comparación de los resultados generales del modelo con la estimación de tráficos reales totales</a>
+        </p>
+        <br>
+        <br>
+        <h1 id="_Toc400361297">Prólogo</h1>
+
+        <p>El transporte de cargas se cuenta entre aquellos sectores acerca de los que menos información confiable se dispone en Argentina. Si bien existen algunas estimaciones sobre el tamaño del universo de cargas que circulan por el país, no se conoce cabalmente la dinámica de los flujos de transporte: qué productos se transportan, de dónde vienen, a dónde van y por qué caminos.</p>
+
+        <p>El entendimiento profundo de los flujos que configuran la red de transporte de cargas en el país es un insumo de gran importancia para una adecuada planificación de la infraestructura necesaria para soportarlos, así como del análisis de políticas sectoriales vinculadas al transporte.</p>
+
+        <p>Este documento se propone hacer un aporte a la construcción de una descripción general de la red vial de transporte de cargas en Argentina. Para esto se ofrece una representación estilizada de la misma basada en los flujos de cargas del modo vial de transporte, el más relevante en el país.</p>
+
+        <p>Este trabajo integra un proyecto más amplio
+            <href="#_ftn1" id="_ftnref1" title="">[1]</a>cuyo objetivo es analizar la viabilidad a largo plazo del sistema ferroviario argentino. La estimación de una matriz origen-destino para el transporte vial de cargas que se expone en este trabajo es el primer paso para identificar el universo de cargas potencialmente derivables al ferrocarril.</p>
+
+        <p>Palabras clave: matriz, origen-destino, transporte, cargas, red, Argentina</p>
+
+        <br>
+        <br>
+        <h1 id="_Toc400361298">Resumen</h1>
+
+        <p>El propósito de este trabajo es estimar una matriz origen-destino para el transporte vial de cargas, a fin de analizar las características de los flujos de transporte en términos de las distancias recorridas, el tipo de productos que se transportan, su recorrido y las zonas productoras y receptoras de tráfico.</p>
+
+        <p>En primer lugar se describe la red utilizada para representar los flujos de transporte de cargas. Se explican los criterios para la construcción y los límites de una zonificación, para la creación de los tramos que conectan las distintas zonas y para realizar el cálculo de los recorridos que conectan todos los pares origen-destino posibles.</p>
+
+        <p>En segundo lugar se presentan las matrices origen-destino de los productos que conforman la matriz de cargas completa. En este estudio se utilizaron datos provenientes de 3 fuentes principales:</p>
+
+        <p>1.
+            <strong>Matriz origen-destino de granos 2010 (Polo y Sanguinetti 2012)</strong>
+            <href="#_ftn2" id="_ftnref2" title="">[2]</a>
+        </p>
+
+        <p>2.
+            <strong>Matrices origen-destino (2010) en base a datos de producción, consumo y comercio exterior</strong>. Se confeccionaron en base a estimaciones propias basadas en fuentes de datos públicas, sectoriales y entrevistas a referentes sectoriales.</p>
+
+        <p>3.
+            <strong>Estudio anterior (Müller 1994) actualizado a 2010</strong>
+            <href="#_ftn3" id="_ftnref3" title="">[3]</a>
+        </p>
+
+        <p>En tercer lugar se hace una descripción de los flujos de transporte estimados a partir de del conteo de tránsito realizado en distintos tramos de la red vial nacional. Se describe la información que existe sobre las rutas nacionales y provinciales y el procedimiento para convertir unidades de TMDA (Tráfico Medio Diario Anual) a volumen de cargas (y luego a volumen equivalente en términos de graneles). Se indican asimismo las limitaciones de los datos de tráfico existentes.</p>
+
+        <p>Luego, a través de un algoritmo de asignación de la matriz OD de cargas obtenida a la red, se contrasta esta información con los tránsitos relevados. Se desarrolla luego un procedimiento para estimar el tonelaje omitido (no relevado por ninguna de las 3 fuentes de datos mencionadas) que surge del control realizado con los conteos de tránsito.</p>
+
+        <p>Por último se ofrecen algunas reflexiones sobre la red vial de cargas de nuestro país y sus principales características.</p>
+
+    </div>
+    <!-- FIN del documento -->
+
+    <!-- barra de navegación al final del documento -->
+    <br>
+    <div class="btn-group btn-group-justified">
+
+        <a href="http://www.blogdelcespa.blogspot.com.ar/#!http://blogdelcespa.blogspot.com/p/documentos-de-trabajo.html" class="btn btn-default">
+            <strong>Volver a Documentos de Trabajo</strong>
+        </a>
+
+        <a href="parte1.html" class="btn btn-default">
+            <strong>Ir a Parte 1</strong>
+        </a>
+    </div>
+    <!-- FIN barra de navegación al final del documento -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
