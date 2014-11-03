@@ -180,9 +180,6 @@ iframe {
     margin-left: auto;
     margin-right: auto;
 }
-#viz_tableau_map, #viz_tableau_matrix {
-    max-height: 90%;
-}
 .navbar-default {
     max-height: 100px;
 }
@@ -237,6 +234,10 @@ div[id="formulario"] {
 }
 #mapa_imprenta {
     top: 0px;
+}
+.visualizacion {
+    margin-top: 17;
+    max-height: 92%;
 }
 /* readable format boostrap elements */
 
@@ -1087,7 +1088,7 @@ html {
 }
 body {
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
