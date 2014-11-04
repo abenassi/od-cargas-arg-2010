@@ -81,6 +81,12 @@ p {
 .datos_contacto {
     text-align: center;
 }
+#datos_contacto {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 66%;
+    margin-top:2%;
+}
 .bs-component {
     display: block;
     top: 0;
@@ -100,9 +106,6 @@ h1:before, h2:before, h3:before, h4:before, .tableau_viz:before {
     height: 100px;
     visibility: hidden;
 }
-h3 {
-    padding-top: 25px;
-}
 h1:after, h2:after, h3:after {
     display: block;
     content: " ";
@@ -121,6 +124,13 @@ img {
     width: 170px;
     position: fixed;
     margin-left: 0px;
+    margin-top: 2%;
+    text-align: center;
+}
+#help {
+    width: 170px;
+    position: fixed;
+    right: 0px;
     margin-top: 2%;
     text-align: center;
 }

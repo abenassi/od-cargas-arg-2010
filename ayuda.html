@@ -15,7 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <!-- titulo del documento -->
-    <title>Descargas</title>
+    <title>Cómo leer este documento</title>
 
 </head>
 
@@ -162,7 +162,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="visualizaciones.html">Visualizaciones</a>
                         </li>
-                        <li class="active"><a href="descargas.html">Descargas</a>
+                        <li><a href="descargas.html">Descargas</a>
                         </li>
                         <li><a href="http://www.blogdelcespa.blogspot.com.ar">CESPA</a>
                         </li>
@@ -176,49 +176,116 @@
 
     ::after
 
+    <!-- barra de navegación side -->
+    <ul id="sidebar" class="nav nav-pills nav-stacked">
+        <li class="panel panel-default"><a href="#ayuda_estructura">Estructura del sitio</a>
+        </li>
+        <li class="panel panel-default"><a href="#ayuda_visualizaciones">Visualizaciones</a>
+        </li>
+        <li class="panel panel-default"><a href="#ayuda_descargas">Descargas</a>
+        </li>
+    </ul>
+    <!-- FIN barra de navegación side -->
+
     <!-- Barra de navegación right-side -->
     <ul id="help" class="nav nav-pills nav-stacked">
-        <li class="panel panel-default"><a href="./ayuda.html">Cómo leer este documento</a>
+        <li class="panel panel-default active"><a href="./ayuda.html">Cómo leer este documento</a>
         </li>
         <li class="panel panel-default"><a href="./contacto.html">Contacto</a>
         </li>
     </ul>
     <!-- FIN barra de navegación right-side -->
 
-    <div class="list-group central_item">
-        <a href="formulario.html" class="list-group-item">
-            <strong>Base de datos en excel</strong>
-            <p></p>
-            <p class="middle_text">Descargar la base de datos en excel que contiene:
-            </p>
-            <div>
-                <ol id="central_list">
-                    <li>Pares Origen-Destino</li>
-                    <li>Flujos de transporte</li>
-                    <li>Tablas de referencias</li>
-                </ol>
-            </div>
+    <!-- comienzo del documento -->
+    <div id="documento">
 
-        </a>
+        <h1 id="ayuda_inicio">Cómo leer este documento</h1>
 
-        <a href="formulario.html" class="list-group-item">
-            <strong>Shapefiles</strong>
-            <p></p>
-            <p class="middle_text">Descargar los shapefiles de la red vial:</p>
-            <div>
-                <ol id="central_list">
-                    <li>Nodos de la red vial</li>
-                    <li>Zonas de la red vial</li>
-                    <li>Tramos de la red vial</li>
-                </ol>
-            </div>
-        </a>
+        <p>El objetivo de esta versión web del documento de trabajo número 37 del CESPA-FCE-UBA es permitir al lector una interactividad con los datos que no es posible conseguir a través de los formatos de publicación usuales para documentos de trabajo como el PDF. Esperamos que el lector de este trabajo se anime a interactuar con todos los gráficos y visualizaciones disponibles buscando enriquecer su entendimiento de los flujos de transporte en Argentina mediante la exploración activa de los datos estimados.</p>
 
+        <p>Para ello comentaremos aquí brevemente cómo pueden utilizarse estas visualizaciones, si bien el mejor consejo que se puede ofrecer al lector es que pruebe hacer click en todos los elementos del gráfico y esté atento a los filtros disponibles.</p>
+
+        <h2 id="ayuda_estructura">Estructura del sitio</h2>
+
+        <h4 id="ayuda_barra_principal">Barra de navegación principal</h4>
+
+        <p>A la izquierda de la <i>barra de navegación principal</i> (en la parte superior de la página) están los menúes desplegables de cada parte del documento. Estos permiten ir de una parte a otra del documento, desde el Inicio hasta el Anexo, o a una sección específica.</p>
+
+        <p>A la derecha de la barra, hay tres botones adicionales:</p>
+        <ul>
+            <li><b>Visualizaciones: </b>Utilizar las visualizaciones preparadas para explorar toda la base de datos.</li>
+            <br>
+            <li><b>Descargas: </b>Descargar las bases de datos y la cartografía necesaria para visualizarlas en cualquier GIS o aplicación geográfica que soporte shapefiles o en Tableau.</li>
+            <br>
+            <li><b>CESPA: </b>Vuelve al blog del CESPA.</li>
+        </ul>
+
+        <h4 id="ayuda_barra_secundaria">Barra de navegación secundaria</h4>
+
+        <p>Al final de cada parte del documento hay una <i>barra de navegación secundaria</i> que permite volver a la parte anterior, continuar a la siguiente o volver a la lista de los documentos de trabajo del CESPA.</p>
+
+        <h4 id="ayuda_barra_lateral">Barra de navegación lateral</h4>
+
+        <p>Sobre el margen izquierdo de cada página se encuentra la <i>barra de navegación lateral</i> que permite desplazarse rápidamente entre las secciones de la parte del documento de trabajo abierta en el navegador.</p>
+
+        <h2 id="ayuda_visualizaciones">Visualizaciones</h2>
+
+        <p>En el documento se utilizan tres tipos de visualizaciones:</p>
+        <ul>
+            <li>Gráficos estáticos</li>
+            <li>Dashboards de <a href="http://www.tableausoftware.com/public/how-it-works">Tableau</a>
+            </li>
+            <li>Mapas de <a href="http://cartodb.com/">CartoDB</a>
+            </li>
+        </ul>
+
+        <h4 id="ayuda_tableau">Dashboards de Tableau</h4>
+
+        <p>En los dashboards embebidos dentro del documento, el lector debe prestar atención a las siguientes formas de interactuar con ellos:</p>
+        <ul>
+            <li><b>Filtros desplegables:</b> Casi todos los dashboards preparados incluyen menúes desplegables que permiten filtrar los datos de la visualización eligiendo entre una o más categorías distintas. También hay filtros para variables cuantitativas que permiten establecer un rango entre un valor mínimo y máximo.</li>
+            <br>
+            <li><b>Filtros gráficos:</b> Hacer click en una barra en un gráfico o en el nombre de una provincia, localidad o producto también permite filtrar los datos de la visualización para esa entidad. Apretando simultáneamente la tecla Ctrl se pueden seleccionar varias entidades a la vez.</li>
+            <br>
+            <li><b>Tooltips:</b> Pasar el mouse por encima de los objetos de mapas (por ejemplo, los tramos de la red vial), de gráficos de barras (las barras) o de otro tipo de gráficos, despliega un cuadro con datos adicionales sobre esa entidad.</li>
+            <br>
+            <li><b>Controles del mapa:</b> Por default, los mapas se reajustan automáticamente para mostrar con el máximo zoom posible el área geográfica completa de los datos filtrados por el usuario. Sin embargo, arriba y a la izquierda de cada mapa el usuario dispone de controles con los que puede hacer zoom (+ y -) o aplicar un recorte a un área determinada del mapa (cuadro +). El cuarto control permite reestablecer el área geográfica por default.</li>
+            <br>
+            <li><b>Compartir:</b> En la parte inferior izquierda de toda visualización de Tableau existen opciones para compartirla en Facebook, Twitter, por mail o extrayendo un link directo. Recordamos que esto debe hacerse siempre citando la fuente.</li>
+            <br>
+            <li><b>Exportar:</b> En la parte inferior al centro, hay opciones de exportación disponibles para descargar la visualización generada por el usuario en PDF, como imagen, como una tabulación cruzada o en forma de datos sin procesar.</li>
+        </ul>
+
+        <h4 id="ayuda_cartodb">Mapas de CartoDB</h4>
+
+        <p>Los mapas de CartoDB utilizados en este documento no permiten filtrar los datos pero ofrecen información adicional al pasar el mouse por encima de tramos, nodos o departamentos y muestran mejor el modelo de la red vial desarrollado y utilizado para ese trabajo.</p>
+
+        <p>Se puede hacer zoom tanto con los controles arriba y a la izquierda como con la rueda del mouse. El mapa de fondo utilizado corresponde a las imágenes satelitales de Google Maps. Arriba a la izquierda del mapa hay un botón que permite compartir el mapa en Facebook, Twitter o copiar un link al mismo.</p>
+
+        <h4 id="ayuda_visualizaciones_generales">Visualizaciones generales</h4>
+
+        <p>En la sección de <i>Visualizaciones</i> se puede explorar la base de datos de forma más completa y general, con una amplia variedad de filtros disponibles para ver exactamente lo que el lector desee ver. La forma de utilización no es distinta a la ya comentada, sin embargo el uso eficaz de la gran variedad de filtros disponibles requiere comprender la variable que se esté filtrando y tener presentes todos los filtros que se vayan colocando a la vez.</p>
+
+        <p>Algunos de los campos disponibles probablemente sólo sean comprensibles luego de leer el documento de trabajo (como por ejemplo agregar los pares origen-destino "IMPLICITOS" a la "Fuente de datos (base)" en la "Matriz Origen-Destino en Tableau").</p>
+
+        <p>Todos los comentarios o sugerencias para mejorar la usabilidad de las visualizaciones son bienvenidos!</p>
+
+        <h2 id="ayuda_descargas">Descargas</h2>
+
+        <p>La base de datos completa utilizada en este trabajo, así como los shapefiles necesarios para su visualización en sistemas de información geográfica u otras aplicaciones cartográficas, están disponibles para su descarga! Creemos que existen muchas aproximaciones posibles a estos datos que aún no han sido exploradas por los autores y esperamos que otras personas generen novedosos análisis o visualizaciones a partir de ellos.</p>
+
+        <p>Si ya lo hiciste, <a href="mailto:dircespa@econ.uba.ar?Subject=Reutilizacion%20de%20datos%20del%20documento%20de%20trabajo%20numero%2037" target="_top">nos encantaría que nos cuentes</a> así podemos referenciarla desde este sitio web. Lo único que pedimos para descargar los datos es que completes <a href="formulario.html">un muy breve formulario</a>, tras lo cual te llegarán los links de descarga por mail.</p>
+
+        <br>
+
+        <div class="well">
+            <p id="reproduction_rights">Queda permitida la reproducción total o parcial citando a la fuente.</p>
+        </div>
+
+        <br>
+        <br>
     </div>
-
-    <div class="well" id="reproduction_rights">
-        <p id="reproduction_rights">Queda permitida la reproducción total o parcial citando a la fuente.</p>
-    </div>
+    <!-- FIN del documento -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
